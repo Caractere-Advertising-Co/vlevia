@@ -1,0 +1,362 @@
+#hero-container {
+  height: 110vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  position: relative;
+
+  &::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #000;
+    opacity: .25;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .swiper-hero {
+    .swiper-wrapper {
+      overflow: hidden;
+
+      .swiper-slide {
+        height: 90vh;
+
+        img {
+          position: absolute;
+          z-index: 0;
+          filter: brightness(45%);
+          width: 100%;
+        }
+
+        .content {
+          position: relative;
+          margin-top: 350px;
+          z-index: 1;
+
+          p {
+            text-transform: uppercase;
+            color: $light;
+            letter-spacing: 7px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 0.7rem;
+          }
+
+          h1 {
+            color: $light;
+            text-align: left;
+
+            strong {
+              font-weight: 800;
+            }
+          }
+
+          .block-cta{
+            display: flex;
+            gap: 50px;
+            justify-content: flex-start;
+            margin-top: 4rem;
+
+              .cta {
+                letter-spacing: 3px;
+                display: block;
+                width: fit-content;
+                max-width: fit-content;
+              }
+
+              .cta-border{
+                color: $light;
+                border:none;
+                margin: 0;
+              }
+          }
+        }
+      }
+    }
+
+    .swiper-pagination {
+      position: absolute;
+      right: 15px;
+      left: auto;
+      top: 50%;
+      width: 80px;
+      height: 2px;
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+
+      .swiper-pagination-bullet {
+        border: 1px solid $light;
+        background-color: $light;
+        height: 1px;
+        width: 30px;
+        border-radius: 0;
+        opacity: 1;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: $primary-color;
+        border-color: $primary-color;
+        width: 80px;
+      }
+    }
+  }
+}
+
+#nos-valeurs{
+  @include white-to-liGray;
+
+  .columns{
+    width: 100vw;
+    max-width: 100vw;
+    gap: 100px;
+    padding-bottom: 100px;
+
+    .colg,
+    .cold{
+      width: 50%;
+    }
+
+    .colg{
+      h2,
+      p,
+      a{
+        margin-left: 15vw;
+      }
+
+      h2{
+        color: $dark-dark-gray;
+        line-height: 2.8rem;
+        margin-bottom: 20px;
+
+        strong{
+          color: $primary-color;
+        }
+      }
+      
+      .block-img{
+        margin-left: 5vw;
+        max-width: 50%;
+      }
+    }
+
+    .cold{
+      .block-img{
+        height: 750px;
+        margin-top: 250px;
+      }
+    }
+  }
+
+  .content-video{
+    position: relative;
+
+    video{
+      width: 600px;
+      background-color: $secondary-color;
+      margin:auto;
+      position: absolute;
+      height: 400px;
+      bottom: -200px;
+      z-index: 15;
+      left: calc(50% - 300px);
+    }
+  }
+}
+
+#big-text{
+  padding: 250px 0;
+
+  .marquee-left,
+  .marquee-right{
+    overflow: hidden;
+
+    h2{
+      font-size: 10rem; 
+      font-weight: 800;
+      line-height: 10rem;
+      white-space: nowrap;
+      color: $font-lightGray;
+      text-transform: uppercase
+    }
+
+    h3{
+      font-weight: 100;
+      font-size: 8rem;
+      line-height: 8rem;
+      color: $font-lightGray;
+      white-space: nowrap;
+      text-transform: uppercase
+    }
+  }
+}
+
+#savoir-faire{
+  .col-1{
+    width: 35%;
+    padding: 150px 0;
+  }
+
+  .col-2{
+    width: 30%;
+    
+    .surtitre{
+      text-transform: uppercase;
+      color: $font-lightGray;
+      letter-spacing: 10px;
+      font-size: 1.2rem;
+  
+      &::before{
+        content:'';
+        width: 40px;
+        background: $primary-color;
+        height: 2px;
+        display: inline-block;
+        margin-right: 30px;
+      }
+    }
+  
+    h2{
+      color: $dark-dark-gray;
+      text-wrap: nowrap;
+      margin-bottom: 50px;
+    }
+  }
+
+  .col-3{
+    width: 30%;
+    position: relative;
+
+    .block-img{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 600px;
+      margin-bottom: -50px;
+    }
+  }
+}
+
+#menu-section-dark{
+  background: $dark;
+  padding: 200px 0 ;
+
+  .menu-list{
+    flex-direction: column;
+
+    a{
+      font-size: 4rem;
+      font-weight: 600;
+      border-bottom: 1px solid $middle-gray;
+      line-height: 5rem;
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      text-shadow: -1px -1px 0 $light, 1px -1px 0 $light, -1px 1px 0 $light, 1px 1px 0 $light;
+      letter-spacing: 2px;
+      color: $dark;
+
+      &::after{
+        content: '';
+        width: 20px;
+        height: 20px;
+        display: block;
+        border-right: 4px solid;
+        border-top: 4px solid;
+        transform: rotate(45deg);
+        border-color: $light;
+        transition: all ease-in 300ms
+      }
+
+      &:hover{
+        color : $light;
+
+        &::after{
+          border-color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+#galerie-menu{
+  .galerie{
+    margin-top: -100px;
+    position: relative;
+
+    .swiper-galerie{
+      .swiper-wrapper{
+        .swiper-slide{
+          aspect-ratio: 1;
+        }
+      }
+    }
+
+    .swiper-galerie-button-next,
+    .swiper-galerie-button-prev{
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      border-radius: 25px;
+      border:1px solid $middle-gray;
+      background: none;
+      color: $light;
+      top: calc(50% - 25px);
+      left: -100px;
+      bottom: 0;
+
+      &::after {
+        font-size: 1rem;
+        color: $dark-dark-gray;
+      }
+    }
+
+    .swiper-galerie-button-next{
+      left: auto;
+      right: -100px;
+      background: none;
+    }
+
+    .swiper-scrollbar{
+      bottom: -80px;
+
+      .swiper-scrollbar-drag{
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+
+#intro-actualites {
+  padding-top: 200px;
+
+  .container {
+    .colg,
+    .cold{
+      width: 50%;
+
+      h2 {
+        margin-bottom: 30px;
+        color: $dark;
+      }
+    }
+  }
+}
+
+#liste-actualites{
+  padding-bottom: 450px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% auto;
+
+  .cta{
+    margin: auto;
+    margin-top: 100px;
+  }
+}

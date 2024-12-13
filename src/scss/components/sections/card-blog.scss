@@ -1,0 +1,32 @@
+.card-news {
+  position: relative;
+  border-bottom: 1px solid $middle-gray;
+  width: calc(100% / 3);
+
+  .block-img{
+    max-height: 400px;
+    aspect-ratio: 1;
+    overflow: hidden;
+  }
+
+  .txt{
+    padding: 30px;
+
+    h3{
+      font-weight: 800;
+      color: $primary-color;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      min-height: 60px;
+    }
+
+    .cta-border{
+      border: none;
+      margin-left: 0;
+      padding-left: 0;
+      text-align: left;
+      font-size: 1rem;
+      letter-spacing: 10px;
+    }
+  }
+}
