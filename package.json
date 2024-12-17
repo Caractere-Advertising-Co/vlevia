@@ -1,7 +1,7 @@
 {
-  "name": "gites-lastrijk",
+  "name": "Vlevia",
   "version": "1.0.0",
-  "description": "Template gites La Strijk",
+  "description": "Vlevia",
   "main": "index.js",
   "scripts": {
     "build": "webpack"

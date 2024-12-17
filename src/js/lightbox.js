@@ -42,9 +42,4 @@ $(document).ready(function () {
       closePopup();
     }
   });
-
-  function closePopup() {
-    $(".container_popup").empty();
-    $("#modal-chambre").hide();
-  }
 });

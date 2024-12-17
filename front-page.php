@@ -155,7 +155,6 @@ $bgActu         = get_field('bg_actu');
     <div class="container columns">
         <div class="colg"><?php if($titre): echo $titre;endif;?></div>
         <div class="cold"><?php if($intro): echo $intro;endif;?></div>
-        
     </div>
 </section>
 
@@ -164,7 +163,7 @@ $bgActu         = get_field('bg_actu');
         <?php 
         $args = array(
             "post_type" => "post",
-            "post_per_page" => 3
+            "posts_per_page" => 3
         );
 
         $news = new WP_Query($args);

@@ -1,8 +1,4 @@
 import inView from "in-view";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger.js";
-
-gsap.registerPlugin(ScrollTrigger);
 
 $(document).ready(function () {
   //IN-VIEW
@@ -92,14 +88,3 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-
-
-var tarifs = document.getElementById('toTarifs');
-
-tarifs.addEventListener("click", function(){
-  var sectionTar = document.getElementById('tarifs');
-  var panel = sectionTar.nextElementSibling;
-
-  sectionTar.classList.toggle("active");
-  panel.style.maxHeight = panel.scrollHeight + "px";
-})
