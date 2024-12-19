@@ -37,6 +37,12 @@
         <?php endif;?>
 
         <?php get_template_part( 'templates-parts/header-nav' );?>
+        <?php 
+        $cta = get_field('cta-contact','options');
+
+        if($cta):
+            echo '<a class="cta" href="'.$cta['url'].'">'.$cta['title'].'</a>'; 
+        endif;?>
     </header>
 
     <?php wp_body_open(); ?>
