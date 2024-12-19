@@ -210,7 +210,8 @@
                   padding: 2% 5%;
                   margin: 0;
 
-                  &::before{
+                  &::before,
+                  &::after{
                     content: none;
                   }
                 }
