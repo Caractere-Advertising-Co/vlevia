@@ -16,6 +16,15 @@
     }
   }
 
+  .custom-shape-divider-bottom-1733734661{
+    background-color: $secondary-color;
+    position: inherit;
+
+    svg{
+      fill: $light;
+    }
+  }
+
   #sites-exploitations{
     @include liGray-to-white;
     padding: 80px 0;

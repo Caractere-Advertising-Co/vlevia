@@ -24,13 +24,11 @@ $imgCarte = get_field('image_carte');
             <?php if($titre): echo $titre; endif;?>
         </div>
     </div>
-    <?php get_template_part('templates-parts/separator/separator-svg') ;?>
 </header>
+<?php get_template_part('templates-parts/separator/separator-svg') ;?>
 
 <section id="formulaire">
-    <div class="container">
-        <?php if($form): echo do_shortcode($form); endif;?>
-    </div>
+    <div class="container"><?php if($form): echo do_shortcode($form); endif;?></div>
 </section>
 
 <section id="sites-exploitations">
@@ -56,6 +54,7 @@ $imgCarte = get_field('image_carte');
     </div>
 </section>
 
-<?php get_template_part( 'templates-parts/section-citation' );?>
+<?php 
 
-<?php get_footer();
+get_template_part( 'templates-parts/section-citation' );
+get_footer();

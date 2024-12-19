@@ -8,8 +8,9 @@
             $logo = get_field('logo-entreprise','options');
 
             if($logo):?>
-                <img src="<?php echo $logo['url'];?>" alt="<?php echo $logo['title'];?>" class="logo" />
-    
+                <div  class="logo block-img">
+                    <img src="<?php echo $logo['url'];?>" alt="<?php echo $logo['title'];?>" />
+                </div>
             <?php endif;?>
         </a>
     </div>
