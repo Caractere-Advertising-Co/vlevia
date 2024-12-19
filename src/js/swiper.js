@@ -39,6 +39,15 @@ const swiperGalerie = new Swiper(".swiper-galerie",{
   },
 });
 
+const swiperGeneration = new Swiper(".swiper-generation",{
+  cssMode: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".swiper-gen-button-next",
+    prevEl: ".swiper-gen-button-prev",
+  }
+})
+
 /* Commun */
 
 const swiperAcco = new Swiper(".swiper-acco", {

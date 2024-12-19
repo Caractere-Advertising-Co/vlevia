@@ -1,4 +1,14 @@
-<section id="citation">
+<?php 
+
+$bg = get_field('background-citation');
+
+if($bg):
+    $bgUrl = $bg['url'];
+endif;
+
+?>
+
+<section id="citation" <?php if($bg):?> style="background-image:url('<?php echo $bgUrl;?>');" <?php endif;?>>
     <div class="container top_content">
         <?php 
             $titre_cons = get_field('titre_section_con','options');

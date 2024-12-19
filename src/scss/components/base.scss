@@ -18,7 +18,7 @@
 }
 
 #cmplz-document{
-  max-width: 1400px !important;
+  max-width: 1280px !important;
   padding:100px 0;
 
   a{
@@ -71,8 +71,8 @@ header {
 
 .content,
 .container {
-  width: 80vw;
-  max-width: 1400px;
+  width: 70vw;
+  max-width: 1280px;
   margin: auto;
 }
 
@@ -88,7 +88,7 @@ header {
 
     h2 {
       color: $dark-gray;
-      margin-top: -60px;
+      margin-top: -200px;
       font-weight: 100;
 
       strong {
@@ -99,7 +99,7 @@ header {
     img {
       z-index: -1;
       position: relative;
-      width: 200px;
+      width: 400px;
       margin: auto;
     }
   }
@@ -117,40 +117,6 @@ svg {
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-button,
-li,
-td,
-input,
-label,
-a {
-  text-wrap: balance;
-  font-family: "Montserrat", sans-serif;
-}
-
-p {
-  text-wrap: pretty;
-  color: $dark-gray;
-  font-weight: 400;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
-
-  &::before,
-  &::after {
-    cursor: pointer;
-  }
 }
 
 .round {

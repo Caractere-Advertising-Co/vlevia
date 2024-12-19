@@ -26,7 +26,9 @@ a {
   line-height: 1.5rem;
   text-align: justify;
   font-weight: 300;
+  text-decoration: none;
   margin-bottom: 20px;
+  text-wrap: wrap;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -102,4 +104,9 @@ strong {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 0.9rem;
+}
+
+
+a{
+  color: $light;
 }

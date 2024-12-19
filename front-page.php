@@ -16,24 +16,10 @@ $videoVal       = get_field('video');
 /* Big Text */
 $bigText        = get_field('big_text');
 
-/* Savoif Faire */
-$imgSF          = get_field('galerie-gle-separator');
-$surtitreSF     = get_field('surtitre-savoirfaire');
-$titreSF        = get_field('titre-savoirfaire');
-$textSF         = get_field('texte-savoirfaire');
-
 /* Menu section dark */
 
 $menu           = get_field('categories_menu');
 $galerie        = get_field('galerie-menu');
-
-
-/* Actualités */
-
-$titre          = get_field('titre-actus');
-$intro          = get_field('intro-actus');
-$bgActu         = get_field('bg_actu');
-
 ?>
 
 <section id="hero-container" <?php if($bgHeader): echo 'style="background-image:url(\''.$bgHeader["url"].'\');"'; endif;?>>
@@ -103,21 +89,7 @@ $bgActu         = get_field('bg_actu');
     <?php endif;?>
 </section>
 
-<section id="savoir-faire">
-    <div class="container columns">
-        <div class="col col-1">
-            <?php if($imgSF): echo '<div class="block-img"><img src="'.$imgSF[0]['url'].'" alt="'.$imgSF[0]['name'].'"/></div>'; endif;?>
-        </div>
-        <div class="col col-2">
-            <?php if($surtitreSF): echo '<h3 class="surtitre">'.$surtitreSF.'</h3>'; endif;?>
-            <?php if($titreSF): echo $titreSF; endif;?>
-            <?php if($textSF): echo $textSF; endif;?>
-        </div>
-        <div class="col col-3">
-            <?php if($imgSF): echo '<div class="block-img"><img src="'.$imgSF[1]['url'].'" alt="'.$imgSF[1]['name'].'"/></div>'; endif;?>
-        </div>
-    </div>
-</section>
+<?php get_template_part( 'templates-parts/section-savoirfaire' );?>
 
 <section id="menu-section-dark">
     <div class="container columns menu-list">
@@ -151,37 +123,6 @@ $bgActu         = get_field('bg_actu');
     </div>
 </section>
 
-<section id="intro-actualites">
-    <div class="container columns">
-        <div class="colg"><?php if($titre): echo $titre;endif;?></div>
-        <div class="cold"><?php if($intro): echo $intro;endif;?></div>
-    </div>
-</section>
-
-<section id="liste-actualites" <?php if($bgActu): echo 'style="background-image:url(\''.$bgActu["url"].'\');"'; endif;?>>
-    <div class="container columns">
-        <?php 
-        $args = array(
-            "post_type" => "post",
-            "posts_per_page" => 3
-        );
-
-        $news = new WP_Query($args);
-
-        if($news->have_posts()):
-            while($news->have_posts()): $news->the_post();
-                get_template_part('templates-parts/blog/card-blog');
-            endwhile;
-        endif;
-
-        wp_reset_postdata();?>
-    </div>
-    <div class="container">
-        <?php $ctaActus = get_field('cta-actus');
-
-        if($ctaActus): echo '<a href="'.$ctaActus['url'].'" class="cta cta-actus">'.$ctaActus['title'].'</a>';endif;
-        ?>
-    </div>
-</section>
+<?php get_template_part( 'templates-parts/section-actualites' );?>
 
 <?php get_footer();?>

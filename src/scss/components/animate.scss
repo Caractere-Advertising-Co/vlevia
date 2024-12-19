@@ -99,3 +99,20 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes pulse{
+  0%{
+    transform: scale(1);
+    border-color: $middle-gray;
+  }
+
+  50%{
+    transform: scale(1.05);
+    border-color: $light-gray;
+  }
+
+  100%{
+    transform: scale(1);
+    border-color: $middle-gray;
+  }
+}
