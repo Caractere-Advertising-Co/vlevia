@@ -123,6 +123,6 @@ $galerie        = get_field('galerie-menu');
     </div>
 </section>
 
-<?php get_template_part( 'templates-parts/section-actualites' );?>
+<?php get_template_part( 'templates-parts/section-actualites' );?>  
 
 <?php get_footer();?>

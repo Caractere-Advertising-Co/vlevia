@@ -16,13 +16,22 @@ $sitesExploi = get_field('sites_exploitation');
 $imgCarte = get_field('image_carte');
 ?>
 
-<header id="header-simple-page">
+
+
+<header id="header">
     <div class="container">
         <div class="content">
             <?php if($titre): echo $titre; endif;?>
         </div>
     </div>
+    <?php get_template_part('templates-parts/separator/separator-svg') ;?>
 </header>
+
+<section id="formulaire">
+    <div class="container">
+        <?php if($form): echo do_shortcode($form); endif;?>
+    </div>
+</section>
 
 <section id="sites-exploitations">
     <div class="container">

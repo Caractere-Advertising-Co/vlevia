@@ -1,5 +1,21 @@
 .page-template-contact {
 
+  #header {
+    height: 300px;
+    padding-bottom: 100px;
+    background-color: $secondary-color;
+    position: relative;
+
+    .container{
+      margin-top: 200px;
+
+      h1{
+        color: $light;
+        font-weight: 600;
+      }
+    }
+  }
+
   #sites-exploitations{
     @include liGray-to-white;
     padding: 80px 0;
