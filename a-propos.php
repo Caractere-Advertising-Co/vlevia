@@ -176,6 +176,7 @@ $ctaLiv = get_field('cta_livraison');
         <?php endif;?>
     </div>
 </section>
+
 <?php get_template_part( 'templates-parts/section-savoirfaire' );?>
 
 <section id="livraison">

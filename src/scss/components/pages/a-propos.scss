@@ -85,6 +85,9 @@
     }
 
     #tabs-valeurs{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
       .tiny-columns{
         border-left: 1px solid $light-gray;
         padding: 30px;
