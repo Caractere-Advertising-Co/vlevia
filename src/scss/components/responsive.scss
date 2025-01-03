@@ -60,6 +60,7 @@
     z-index: 10000 !important;
     width: 80vw;
     left: 10vw;
+    top: 120px;
   
     .col-g,
     .col-d {
@@ -733,6 +734,15 @@
       margin: 50px auto;
   }
 
+  .top_banner_header{
+    height: auto;
+    padding: 10px 0;
+    
+    p{
+      line-height: 1rem;
+      margin-bottom: 0;
+    }
+  }
   
   // FRONT-PAGE
 
@@ -741,8 +751,13 @@
       .swiper-hero{
         .swiper-wrapper{
           .swiper-slide{
-            h1{
+            .content{
+              left: 5vw;
               width: 90vw;
+
+              h1{
+                font-size: 2.3rem;
+              }
             }
           }
         }
@@ -842,6 +857,29 @@
     
     #big-text{
       padding-bottom: 0;
+    }
+
+    #galerie-menu{
+      .galerie{
+        width: 85vw;
+
+        .swiper-button-next{
+          background-color: $dark;
+          right: -25px;
+
+          &::after{
+            color: $light;
+          }
+        }
+        .swiper-button-prev{
+          background-color: $light;
+          left: -25px;
+
+          &::after{
+            color: $dark;
+          }
+        }
+      }
     }
 
     #intro-actualites{
