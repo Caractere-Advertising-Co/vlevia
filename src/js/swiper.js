@@ -2,7 +2,7 @@
 
 const swiperHero = new Swiper(".swiper-hero", {
   loop: true,
-  autoplay: true,
+  autoplay: false,
   cssMode: true,
   clickable: true,
   speed: 600,
@@ -37,6 +37,15 @@ const swiperGalerie = new Swiper(".swiper-galerie",{
     el: ".swiper-scrollbar",
     hide: false ,
   },
+  breakpoints:{
+    320:{
+      slidesPerView: 1,
+      autoplay: true
+    },
+    480:{
+      slidesPerView: 3
+    }
+  }
 });
 
 const swiperGeneration = new Swiper(".swiper-generation",{

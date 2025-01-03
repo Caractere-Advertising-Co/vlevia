@@ -45,10 +45,17 @@ $imgCarte = get_field('image_carte');
             endif;?>
         </div>
 
-        <div class="block-img">
+        <div class="block-img nomobile">
             <img src="<?php echo $imgCarte['url'];?>" alt="<?php echo $imgCarte['name'];?>"/>
             <?php foreach($sitesExploi as $sites):?>
                 <span style="left:<?php echo $sites['coordonnees_left']['desktop'];?>px; top: <?php echo $sites['coordonnees_top']['desktop'];?>px;"></span>
+            <?php endforeach;?>
+        </div>
+
+        <div class="block-img nodesktop">
+            <img src="<?php echo $imgCarte['url'];?>" alt="<?php echo $imgCarte['name'];?>"/>
+            <?php foreach($sitesExploi as $sites):?>
+                <span style="left:<?php echo $sites['coordonnees_left']['mobile'];?>px; top: <?php echo $sites['coordonnees_top']['mobile'];?>px;"></span>
             <?php endforeach;?>
         </div>
     </div>
