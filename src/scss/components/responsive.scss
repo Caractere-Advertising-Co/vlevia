@@ -736,6 +736,26 @@
           }
         }
       }
+
+      #livraison{
+        .container{
+          padding-bottom: 50px;
+
+          .col-d{
+            padding-top: 50px;
+
+            h3{
+              letter-spacing: 2px;
+            }
+
+            ul{
+              li{
+                padding: 10px 20px 10px 0;
+              }
+            }
+          }
+        }
+      }
   }
   
   #banner-fullwidth {
