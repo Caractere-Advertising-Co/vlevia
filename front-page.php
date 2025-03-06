@@ -98,7 +98,7 @@ $galerie        = get_field('galerie-menu');
                 $link = get_sub_field('lien');
                 
                 var_dump($link);?>
-                <a href="<?php echo $link['url'];?>"><?php echo $link['name'];?></a>
+                ddd
             <?php endwhile;
         endif;?>
     </div>
