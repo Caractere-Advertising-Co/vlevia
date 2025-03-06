@@ -93,16 +93,7 @@ $galerie        = get_field('galerie-menu');
 
 <?php get_template_part( 'templates-parts/section-savoirfaire' );?>
 
-<section id="menu-section-dark">
-    <div class="container columns menu-list">
-        <?php if(have_rows($menu)):
-            while(have_rows($menu)): the_row();
-                $links = get_sub_field('lien');
-                    var_dump($links);
-            endwhile;
-        endif;?>
-    </div>
-</section>
+
 
 <section id="galerie-menu">
     <div class="container galerie">
