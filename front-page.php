@@ -95,7 +95,7 @@ $galerie        = get_field('galerie-menu');
     <div class="container columns menu-list">
         <?php if($menu):?>
             <?php foreach($menu as $m):?>
-                <a href="<?php echo get_permalink($m->ID);?>"><?php echo $m->post_title;?></a>
+                <a href="<?php echo $m['url'];?>"><?php echo $m['title'];?></a>
             <?php endforeach;
         endif;?>
     </div>
