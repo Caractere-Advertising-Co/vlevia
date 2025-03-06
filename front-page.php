@@ -93,10 +93,12 @@ $galerie        = get_field('galerie-menu');
 
 <section id="menu-section-dark">
     <div class="container columns menu-list">
-        <?php if($menu):?>
-            <?php foreach($menu as $m):?>
-                <a href="<?php echo $m['url'];?>"><?php echo $m['name'];?></a>
-            <?php endforeach;
+        <?php if(have_row($menu)):
+            while(have_row($menu)): the_row();
+                $link = get_sub_field('lien');
+            ?>
+                <a href="<?php echo $link['url'];?>"><?php echo $link['name'];?></a>
+            <?php endwhile;
         endif;?>
     </div>
 </section>
