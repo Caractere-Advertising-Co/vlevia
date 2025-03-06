@@ -18,21 +18,23 @@ $ctaActus   = get_field('cta-actus','options');
 
 <section id="liste-actualites" <?php if($bgActu): echo 'style="background-image:url(\''.$bgActu["url"].'\');"'; endif;?>>
     <div class="container columns">
-        <?php 
-        $args = array(
-            "post_type" => "post",
-            "posts_per_page" => 3
-        );
+        <div class="grid_articles">
+            <?php 
+            $args = array(
+                "post_type" => "post",
+                "posts_per_page" => 3
+            );
 
-        $news = new WP_Query($args);
+            $news = new WP_Query($args);
 
-        if($news->have_posts()):
-            while($news->have_posts()): $news->the_post();
-                get_template_part('templates-parts/blog/card-blog');
-            endwhile;
-        endif;
+            if($news->have_posts()):
+                while($news->have_posts()): $news->the_post();
+                    get_template_part('templates-parts/blog/card-blog');
+                endwhile;
+            endif;
 
-        wp_reset_postdata();?>
+            wp_reset_postdata();?>
+        </div>
     </div>
     <div class="container">
 
