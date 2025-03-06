@@ -248,7 +248,7 @@
   }
   
   #hero-container {
-    height: 85vh !important;
+    height: 95vh !important;
   
     .swiper {
       .swiper-wrapper {
@@ -590,7 +590,8 @@
         }
       }
   
-      #portion-consommateur{
+      #portion-consommateur,
+      #croissance{
         background-color: $dark;
         margin-top: 200px;
         position: relative;
@@ -789,7 +790,7 @@
     }
 
     #section-introduction{
-      height: 760px;
+      height: 800px;
       margin-top: -250px;
 
       background: #000;
@@ -877,19 +878,21 @@
     }
 
     #menu-section-dark{
+      padding: 150px 0;
+
       .menu-list{
         gap: 0;
         
         a{
-          font-size: 3rem;
-          line-height: 3rem;
+          font-size: 2rem;
+          line-height: 2rem;
           text-align: left;
         }
       }
     }
     
     #big-text{
-      padding-bottom: 0;
+      padding: 100px 0;
     }
 
     #galerie-menu{
