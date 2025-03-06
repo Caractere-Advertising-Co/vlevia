@@ -36,23 +36,23 @@ $cta = get_field('cta');
 <section id="simple-page">
     <div class="container">
         <div class="grid_articles">
-    <?php 
-        $args = array(
-            "post_type" => "post",
-            "post_per_page" => -1
-        );
+        <?php 
+            $args = array(
+                "post_type" => "post",
+                "post_per_page" => -1
+            );
 
-        $news = new WP_Query($args);
-        $i = 1;
+            $news = new WP_Query($args);
+            $i = 1;
 
-        if($news->have_posts()):
-            while($news->have_posts()): $news->the_post();
-                get_template_part('templates-parts/blog/card-blog', null, array( 'id' => $i));
-                $i++;
-            endwhile;
-        endif;
+            if($news->have_posts()):
+                while($news->have_posts()): $news->the_post();
+                    get_template_part('templates-parts/blog/card-blog', null, array( 'id' => $i));
+                    $i++;
+                endwhile;
+            endif;
 
-        wp_reset_postdata();?>
+            wp_reset_postdata();?>
 
         </div>
 
