@@ -119,7 +119,9 @@ $bgActu = get_field('bg_actu','options');
             ?>
                 <div class="panel" style="background:url('<?php echo $img['url'];?>');">
                     <h4 class="title"><?php echo $title;?></h4>
-                    <a href="<?php echo $link['url'];?>">-></a>
+                    <a href="<?php echo $link['url'];?>">
+                        <img src="<?php echo get_bloginfo( 'url'). '/wp-content/themes/vlevia/assets//Users/benoitlondero/Desktop/1x/arrow_right_bottom-8.png';?>" alt="arrow" />
+                    </a>
                 </div>
             <?php endwhile;
         endif; ?>
