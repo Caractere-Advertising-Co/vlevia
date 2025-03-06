@@ -1192,6 +1192,10 @@
           margin-left: 0;
           margin-bottom: 50px;
         }
+
+        .cta{
+          margin-top: 20px;
+        }
       }
 
       .columns{
@@ -1205,11 +1209,17 @@
 
         .cold{
           width: 100%;
+
+          .txtRight{
+            width: 100%;
+            padding-left: 0;
+          }
         }
       }
     }
 
     #activites{
+      padding-top: 50px;
       .container{
         .surtitre{
           letter-spacing: 15px;
@@ -1235,7 +1245,7 @@
     }
 
     #portion-consommateur{
-      margin-top: 250px;
+      margin-top: 350px;
 
       .columns{
         .block-img{
@@ -1246,6 +1256,10 @@
         .texte{
           width: 90%;
           padding-right: 20px;
+
+          &::before{
+            width: 90%;
+          }
         }
 
         .block-img-2{
@@ -1270,6 +1284,68 @@
 
         .cold{
           padding-top: 0;
+        }
+      }
+
+      .container{
+        .col-g{
+          .block-img{
+            height: 400px;
+          }
+        }
+
+        .col-d{
+          padding-top: 0;
+        }
+      }
+    }
+
+    #viande-en-carcasse{
+      background: #fff;
+      background: -moz-linear-gradient(180deg, #fff 70%, #000 60%);
+      background: -webkit-linear-gradient(180deg, #fff 70%, #000 60%);
+      background: linear-gradient(180deg, #fff 70%, #000 60%);
+
+      .container{
+        .col-g{
+          margin-top: 0;
+        }
+
+        .col-d{
+          margin-top: 0;
+
+          .block-img{
+            margin-top: -50px;
+            height: 400px;
+          }
+        }
+      }
+    }
+
+    #citation-dark{
+      padding: 100px 0;
+    }
+
+    #transport-logistique{
+      margin-top: 0;
+      padding-top: 0;
+      height: 300px;
+      background: #fff;
+      background: -moz-linear-gradient(270deg, #fff 90%, #000 90%);
+      background: -webkit-linear-gradient(270deg, #fff 90%, #000 90%);
+      background: linear-gradient(270deg, #fff 90%, #000 90%);
+
+      .columns{
+        .col-g{
+          .block-img{
+            height: 400px;
+            margin-bottom: 0;
+          }
+        }
+
+        .col-d{
+          width: 85%;
+          padding-left: 15%;
         }
       }
     }
