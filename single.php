@@ -26,5 +26,5 @@ $ctaTr = get_field('cta-transition');
 <?php get_template_part( 'templates-parts/separator/separator-svg' );?>
 <?php get_template_part( 'templates-parts/section-introduction' );?>
 
-<?php get_template_part( 'templates-parts/section-contact'); ?>
+<?php get_template_part( 'templates-parts/contact'); ?>
 <?php get_footer(); 
