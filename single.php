@@ -24,7 +24,5 @@ $ctaTr = get_field('cta-transition');
 </header>
 
 <?php get_template_part( 'templates-parts/separator/separator-svg' );?>
-    <?php get_template_part( 'templates-parts/section-introduction' );?>
-
-
+<?php get_template_part( 'templates-parts/section-introduction' );?>
 <?php get_footer();

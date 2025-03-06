@@ -26,4 +26,17 @@
           fill: $light;
         }
     }
+
+    #section-introduction{
+        margin-top: 0;
+        background: none;
+
+        .container{
+            .col-d{
+                p{
+                    color: $dark;
+                }
+            }
+        }
+    }
 }
