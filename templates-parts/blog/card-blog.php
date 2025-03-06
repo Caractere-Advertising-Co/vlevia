@@ -6,8 +6,8 @@ $intro = get_field('texte_introduction');
 
 ?>
 
-<div class="card-news">
-    <div class="block-img">
+<div class="card_article">
+    <div class="miniature">
         <img src="<?php echo $thmb;?>"/>
     </div>
 
