@@ -18,7 +18,6 @@ $bigText        = get_field('big_text');
 
 /* Menu section dark */
 
-$menu           = get_field('categories_menu');
 $galerie        = get_field('galerie-menu');
 ?>
 
@@ -46,8 +45,6 @@ $galerie        = get_field('galerie-menu');
         <div class="swiper-pagination"></div>
     </div>
 </section>
-
-
 
 <?php get_template_part( 'templates-parts/section-introduction');?>
 <?php get_template_part( 'templates-parts/section-citation' );?>
@@ -93,7 +90,17 @@ $galerie        = get_field('galerie-menu');
 
 <?php get_template_part( 'templates-parts/section-savoirfaire' );?>
 
-
+<section id="menu-section-dark">
+    <div class="container columns menu-list">
+        <?php if(have_rows('categories_menu')):
+            while(have_rows('categories_menu')): the_row();
+                $link = get_sub_field('lien');
+            ?>
+                <a href="<?php echo $link['url'];?>"><?php echo $link['name'];?></a>
+            <?php endwhile;
+        endif;?>
+    </div>
+</section>
 
 <section id="galerie-menu">
     <div class="container galerie">
