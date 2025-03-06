@@ -67,11 +67,14 @@
 
           p{
             min-height: 100px;
+            min-height: 70px;
+            margin-bottom: 0;
           }
 
           .cta-border{
             color: $primary-color;
             padding: 5px 20px;
+            margin-top: 20px;
           }
         }
       }
