@@ -96,7 +96,7 @@ $galerie        = get_field('galerie-menu');
             while(have_rows('categories_menu')): the_row();
                 $link = get_sub_field('lien');
             ?>
-                <a href="<?php echo $link['url'];?>"><?php echo $link['name'];?></a>
+                <a href="<?php echo $link['url'];?>"><?php echo $link['title'];?></a>
             <?php endwhile;
         endif;?>
     </div>
