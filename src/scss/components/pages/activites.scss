@@ -140,6 +140,7 @@
                 flex-direction: column;
                 justify-content: center;
                 filter: saturate(0);
+                gap: 30px;
 
                 &::before{
                     content:'';
@@ -170,6 +171,8 @@
                     display:block;
                     padding:20px;
                     text-decoration:none;
+                    width: 60px;
+                    z-index: 1;
                 }
 
                 &:hover{
