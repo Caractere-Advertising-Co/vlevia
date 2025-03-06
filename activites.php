@@ -126,7 +126,7 @@ $bgActu = get_field('bg_actu','options');
     </div>
 </section>
 
-<section id="croissance">
+<section id="portion-consommateur">
     <div class="container columns">
         <?php if($imgResp):?>
             <div class="block-img">
@@ -148,7 +148,7 @@ $bgActu = get_field('bg_actu','options');
     </div>
 </section>
 
-<section id="activite-1">
+<section id="viande-conditionnee">
     <div class="container columns">
         <div class="col-g">
             <?php if($imgAct2):?>
@@ -167,7 +167,7 @@ $bgActu = get_field('bg_actu','options');
     </div>
 </section>
 
-<section id="activite-dark">
+<section id="viande-en-carcasse">
     <div class="container columns">
         <div class="col-g">
         <?php if($surAct3): echo '<h3>'.$surAct3.'</h3>'; endif;?>
@@ -192,7 +192,7 @@ $bgActu = get_field('bg_actu','options');
     </div>
 </section>
 
-<section id="livraison">
+<section id="transport-logistique">
     <div class="container columns">
         <div class="col-g">
             <?php if($imgLiv):?>

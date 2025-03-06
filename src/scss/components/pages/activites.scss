@@ -184,7 +184,7 @@
         }
     }
 
-    #croissance{
+    #portion-consommateur{
         background-color: $dark;
         margin-top: 400px;
         position: relative;
@@ -242,8 +242,8 @@
         }
     }
 
-    #livraison,
-    #activite-1{
+    #transport-logistique,
+    #viande-conditionnee{
         padding-top: 200px;
     
         .container{
@@ -306,7 +306,7 @@
         }
     }
 
-    #activite-dark{
+    #viande-en-carcasse{
         background: rgb(255,255,255);
         background: -moz-linear-gradient(90deg, $light 60%, $dark 60%);
         background: -webkit-linear-gradient(90deg, $light 60%, $dark 60%);
@@ -392,7 +392,7 @@
         }
     }
 
-    #livraison{
+    #transport-logistique{
         background: $light;
         background: -moz-linear-gradient(270deg, $light 60%, $dark 60%);
         background: -webkit-linear-gradient(270deg, $light 60%, $dark 60%);
