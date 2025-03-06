@@ -1179,6 +1179,101 @@
       }
     }
   }
+
+  .page-template-activites{
+    #header-simple-page{
+      height: 200px;
+    }
+
+    #acteur-majeur{
+      .container{
+        .content{
+          width: 100%;
+          margin-left: 0;
+          margin-bottom: 50px;
+        }
+      }
+
+      .columns{
+        .colg{
+          width: 100%;
+
+          .block-img{
+            margin-top: 50px;
+          }
+        }
+
+        .cold{
+          width: 100%;
+        }
+      }
+    }
+
+    #activites{
+      .container{
+        .surtitre{
+          letter-spacing: 15px;
+          margin-left: -30px;
+        }
+      }
+      .panels{
+        flex-direction: column;
+
+        .panel{
+          padding: 20px 0;
+
+          .title{
+            width: 80vw;
+          }
+
+          a{
+            padding: 5px 10px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    #portion-consommateur{
+      margin-top: 250px;
+
+      .columns{
+        .block-img{
+          margin-top: -300px;
+          height: 450px;
+        }
+
+        .texte{
+          width: 90%;
+          padding-right: 20px;
+        }
+
+        .block-img-2{
+          width: 70%;
+          margin-top: 0;
+          margin-bottom: -110px;
+        }
+      }
+    }
+
+    #viande-conditionnee{
+      padding-top: 150px;
+
+      .columns{
+        margin-top: 0;
+
+        .colg{
+          .block-img{
+            height: 400px;
+          }
+        }
+
+        .cold{
+          padding-top: 0;
+        }
+      }
+    }
+  }
 }
 
 // Retina Screen
