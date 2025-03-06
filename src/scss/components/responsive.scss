@@ -59,6 +59,12 @@
     letter-spacing: 4px;
     font-size: 0.8rem;
   }
+
+  .form{
+    .form-grid{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
   
   .container.columns {
     flex-direction: column;
