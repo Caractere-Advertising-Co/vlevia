@@ -1,4 +1,23 @@
 .page-template-actualites {
+  #header {
+    height: 300px;
+    padding-bottom: 100px;
+    background-color: $secondary-color;
+
+    .container{
+      margin-top: 200px;
+
+      h1{
+        color: $light;
+        font-weight: 400;
+
+        strong{
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  
   #simple-page {
     padding-top: 100px;
 
@@ -137,43 +156,5 @@
 
   .section_vosp {
     padding-top: 150px;
-  }
-
-  #nos-campagnes {
-    padding: 100px 0;
-    border-bottom: 1px solid $light-gray;
-
-    h2 {
-      text-align: center;
-      color: $dark-dark-gray;
-
-      strong {
-        color: $primary-color;
-      }
-    }
-  }
-
-  #banner-fullwidth {
-    background: none;
-
-    .container {
-      .subtitle {
-        color: $dark-gray;
-      }
-
-      h2 {
-        color: $dark-gray;
-
-        strong {
-          color: $primary-color;
-        }
-      }
-
-      .cta {
-        background: none;
-        color: $primary-color;
-        border: 1px solid $primary-color;
-      }
-    }
   }
 }
