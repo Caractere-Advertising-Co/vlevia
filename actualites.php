@@ -34,7 +34,7 @@ $cta = get_field('cta');
 </header>
 
 <section id="simple-page">
-    <div class="container">
+    <div class="container grid-post">
     <?php 
         $args = array(
             "post_type" => "post",
