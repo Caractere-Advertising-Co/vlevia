@@ -15,11 +15,15 @@ $ctaTr = get_field('cta-transition');
 
 ?>
 
-
-<header id="header-simple-page">
-    <?php get_template_part('templates-parts/separator/separator-svg');?>
+<header id="header">
+    <div class="container">
+        <div class="content">
+            <?php if($titre): echo $titre; endif;?>
+        </div>
+    </div>
 </header>
 
+<?php get_template_part( 'templates-parts/separator/separator-svg' );?>
 
 <section id="transition-blog">
 <div class="imgTr"><img src="<?php if($imgTr): echo $imgTr['url'];endif;?>" alt="<?php if($imgTr):echo $imgTr['title'];endif;?>"/></div>
