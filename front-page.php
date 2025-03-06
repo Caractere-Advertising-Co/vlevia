@@ -98,10 +98,7 @@ $galerie        = get_field('galerie-menu');
         <?php if(have_rows($menu)):
             while(have_rows($menu)): the_row();
                 $links = get_sub_field('lien');
-                
-                foreach($links as $link):
-                    var_dump($link);
-                endforeach;
+                    var_dump($links);
             endwhile;
         endif;?>
     </div>
