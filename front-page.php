@@ -97,11 +97,12 @@ $galerie        = get_field('galerie-menu');
     <div class="container columns menu-list">
         <?php if(have_rows($menu)):
             while(have_rows($menu)): the_row();
-                $link = get_sub_field('lien');
+                $links = get_sub_field('lien');
                 
-                var_dump($link);?>
-                ddd
-            <?php endwhile;
+                foreach($links as $link):
+                    var_dump($link);
+                endforeach;
+            endwhile;
         endif;?>
     </div>
 </section>
