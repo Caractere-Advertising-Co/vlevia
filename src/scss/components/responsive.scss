@@ -41,6 +41,18 @@
     font-size: 2rem;
     line-height: 2.5rem;
   }
+
+  .top_banner_header{
+    height: auto;
+    padding: 10px 0;
+    
+    p{
+      line-height: 1rem;
+      margin-bottom: 0;
+      letter-spacing: 3px;
+    }
+  }
+  
   
   // COMMUN
   
@@ -773,16 +785,7 @@
       margin: 50px auto;
   }
 
-  .top_banner_header{
-    height: auto;
-    padding: 10px 0;
-    
-    p{
-      line-height: 1rem;
-      margin-bottom: 0;
-    }
-  }
-  
+
   // FRONT-PAGE
 
   .page-template-accueil,
