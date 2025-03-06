@@ -56,17 +56,18 @@
 
           h3 {
             color: $primary-color;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 600;
-            line-height: 1.8rem;
+            line-height: 1.5rem;
             text-transform: none;
             letter-spacing: 0;
             margin: 10px 0;
             min-height: 60px;
           }
 
-          a {
+          .cta-border{
             color: $primary-color;
+            padding: 5px 20px;
           }
         }
       }
