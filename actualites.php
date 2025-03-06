@@ -34,7 +34,8 @@ $cta = get_field('cta');
 </header>
 
 <section id="simple-page">
-    <div class="container grid_articles">
+    <div class="container">
+        <div class="grid_articles">
     <?php 
         $args = array(
             "post_type" => "post",
@@ -52,6 +53,8 @@ $cta = get_field('cta');
         endif;
 
         wp_reset_postdata();?>
+
+        </div>
 
         <div id="nos-campagnes">
             <?php if($titreDec): echo $titreDec; endif;?>
