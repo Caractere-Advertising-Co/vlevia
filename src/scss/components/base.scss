@@ -64,7 +64,6 @@ header {
   }
 }
 
-
 .content,
 .container {
   width: 70vw;
@@ -509,5 +508,12 @@ form {
     .cta {
       margin: auto;
     }
+  }
+}
+
+form{
+  .disclaimer{
+    font-family: 'Montserrat',sans-serif;
+    font-size: .8rem;
   }
 }
