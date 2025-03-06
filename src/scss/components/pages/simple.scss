@@ -35,9 +35,18 @@
         padding-bottom: 50px;
 
         .container{
+            .col-g{
+                margin-top: 50px;
+            }
+
             .col-d{
                 p{
                     color: $dark;
+                }
+
+                .cta{
+                    position: relative;
+                    bottom: auto;
                 }
             }
         }
