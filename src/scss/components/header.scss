@@ -1,6 +1,8 @@
 .top_banner_header {
   height: 40px;
   width: 100vw;
+  position: relative;
+  z-index: 10000;
   background-color: $primary-color;
 
   p {

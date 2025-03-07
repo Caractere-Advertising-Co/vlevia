@@ -7,5 +7,7 @@ $(document).ready(function () {
     menu.classList.toggle("active-menu");
     header.classList.toggle("active-menu");
     header.classList.toggle("fixed");
+
+    document.body.classList.toggle('no-scroll');
   });
 });
