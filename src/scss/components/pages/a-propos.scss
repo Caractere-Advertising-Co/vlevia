@@ -1,9 +1,11 @@
 .page-template-a-propos {
   #header {
-    padding-bottom: 0;
-    
+    height: 300px;
+    padding-bottom: 100px;
+    background-color: $secondary-color;
+
     .container{
-      padding-top: 150px;
+      margin-top: 200px;
 
       h1{
         color: $light;
@@ -17,7 +19,7 @@
   }
 
   .custom-shape-divider-bottom-1733734661{
-    background: linear-gradient(180deg, #fff 5%, #000 5%);
+        background: linear-gradient(180deg, #fff 5%, #000 5%);
     position: inherit;
 
     svg{
