@@ -322,6 +322,10 @@
   
   #liste-actualites{
     padding-bottom: 250px;
+
+    .grid_articles{
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   
   #liste-actualites,
@@ -1466,12 +1470,22 @@
   .jobs-template-single-jobs{
     #header{
       padding-bottom: 50px;
-      
+
       .container{
         margin-top: 150px;
 
         .content{
-          width: 80vw;
+          width: 85vw;
+        }
+      }
+    }
+
+    #simple-page{
+      .container{
+        margin-top: 0;
+
+        .cold{
+          padding-left: 0;
         }
       }
     }
