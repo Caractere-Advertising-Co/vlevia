@@ -86,12 +86,12 @@
           align-items: center;
           letter-spacing: 0;
 
+          &::before{
+            content: none;
+          }
+
           a{
             height: 15px;
-
-            &::before{
-              content: none;
-            }
           }
         }
 
