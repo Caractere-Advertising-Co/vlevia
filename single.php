@@ -26,5 +26,17 @@ $ctaTr = get_field('cta-transition');
 <?php get_template_part( 'templates-parts/separator/separator-svg' );?>
 <?php get_template_part( 'templates-parts/section-introduction' );?>
 
+<?php 
+
+$args = array(
+    'post-type' => 'jobs'
+)
+
+$jobs = new WP_Query($args);
+
+foreach($jobs as $job):
+    var_dump($job);
+endforeach;?>
+
 <?php get_template_part( 'templates-parts/contact'); ?>
 <?php get_footer(); 
