@@ -1563,6 +1563,43 @@
         }
       }
     }
+
+    #presa_jobs{
+      .container{
+          padding-top: 50px;
+  
+          .content_service{
+              border: none;
+              padding-top: 0;
+              padding-left: 25%;
+      
+              .document_ddl{
+                  padding: 50px 30px;
+                  display: flex ;
+                  align-items: center;
+                  justify-content: space-between;
+                  border-bottom: 5px solid $primary-color; 
+                  transition: all ease-in 300ms;
+
+                  &:hover{
+                      border-bottom: 10px solid $primary-color;
+                  }
+              }
+      
+              p{
+                  text-align: left;
+                  color: $secondary-color;
+                  font-weight: 600;
+                  margin-bottom: 0;
+              }
+
+              .block-img{
+                  height: 30px;
+                  width: 30px;
+              }
+          }
+      }
+  }
   }
 
   .single{
