@@ -1431,7 +1431,20 @@
   }
 
   .page-template-single{
-    #presa-jobs{
+    #section-introduction{
+      .container{
+        .col-d{
+          .cta{
+            letter-spacing: 2px;
+            text-align: center;
+            margin: auto;
+            width: calc(100% - 60px);
+          }
+        }
+      }
+    }
+
+    #presa_jobs{
       .container{
         .content_service{
           padding-left: 0;
