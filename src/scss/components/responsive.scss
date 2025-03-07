@@ -1414,6 +1414,31 @@
       height: 650px;
     }
   }
+
+  .page-template-actualites{
+    #simple-page{
+      .container{
+        .grid_articles{
+          grid-template-columns: repeat(1, 1fr);
+          gap: 50px;
+
+          .card_article{
+            padding-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .page-template-single{
+    #presa-jobs{
+      .container{
+        .content_service{
+          padding-left: 0;
+        }
+      }
+    }
+  }
 }
 
 // Retina Screen
