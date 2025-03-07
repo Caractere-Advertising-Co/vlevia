@@ -18,20 +18,17 @@ $contentOffre = get_field('contenu_offre');
 
 $contact      = get_field('contact');
 
-$titPos = get_field('titre_postuler');
+$titPos = get_field('titre_postuler');?>
 
-$bg_header = get_field('image');
-
-if(!$bg_header):
-    $bg_url = get_template_directory_uri(  ).'/assets/img/bg-default.jpg';
-else :
-    $bg_header = get_field('image');
-    $bg_url = $bg_header['url'];
-endif;?>
-
-<header id="header-simple-page">
-    <?php get_template_part('templates-parts/separator/separator-svg');?>
+<header id="header">
+    <div class="container">
+        <div class="content">
+            <?php if($titre): echo $titre; endif;?>
+        </div>
+    </div>
 </header>
+
+<?php get_template_part( 'templates-parts/separator/separator-svg' );?>
 
 <section id="simple-page">
     <div class="container">
