@@ -26,28 +26,35 @@ $ctaTr = get_field('cta-transition');
 <?php get_template_part( 'templates-parts/separator/separator-svg' );?>
 <?php get_template_part( 'templates-parts/section-introduction' );?>
 
-<?php 
 
-$args = array(
-    'post_type' => 'jobs',
-	'post_status' => 'publish'
-);
+<section id="presa_jobs">
+    <div class="container">
+        <div class="content_service">
+            <?php 
 
-$query = new WP_Query($args);
+            $args = array(
+                'post_type' => 'jobs',
+                'post_status' => 'publish'
+            );
 
-if($query->have_posts()):
-	while($query->have_posts()): $query->the_post();
-        $title = get_the_title();
-        $permalink = get_permalink( );
+            $query = new WP_Query($args);
 
-        ?>
-      <a href="<?php echo $permalink;?>">
-            <div class="document_ddl">
-                <?php echo '<p>'.$title.'</p>';?>Découvrir
-            </div>
-        </a>
-	<?php endwhile;
-endif;?>
+            if($query->have_posts()):
+                while($query->have_posts()): $query->the_post();
+                    $title = get_the_title();
+                    $permalink = get_permalink( );
+
+                    ?>
+                <a href="<?php echo $permalink;?>">
+                        <div class="document_ddl">
+                            <?php echo '<p>'.$title.'</p>';?>Découvrir
+                        </div>
+                    </a>
+                <?php endwhile;
+            endif;?>
+        </div>
+    </div>
+</section>
 
 <?php get_template_part( 'templates-parts/contact'); ?>
 <?php get_footer(); 
