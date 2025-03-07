@@ -1451,7 +1451,8 @@
 
     #header{
       .container{
-        margin-top: 150px;
+        margin-top: 0;
+        padding-top: 150px;
 
         .content{
           width: 85vw;
