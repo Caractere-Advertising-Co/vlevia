@@ -90,6 +90,12 @@
             content: none;
           }
 
+          &:first-child{
+            &::before{
+              content: "|";
+            }
+          }
+
           a{
             height: 15px;
           }
