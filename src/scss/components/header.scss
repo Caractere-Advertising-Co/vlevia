@@ -88,6 +88,10 @@
 
           a{
             height: 15px;
+
+            &::before{
+              content: none;
+            }
           }
         }
 
