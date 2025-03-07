@@ -112,5 +112,5 @@ function add_custom_post_jobs() {
 	);
 	register_post_type( 'jobs', $args );
 }
+
 add_action( 'init', 'add_custom_post_jobs', 0 );
-  
