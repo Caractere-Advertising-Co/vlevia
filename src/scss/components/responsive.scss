@@ -1509,6 +1509,47 @@
       }
     }
   }
+
+  .single{
+    #header{
+      .container{
+        margin-top: 150px;
+
+        .content{
+          width: 85vw;
+
+          h1{
+            font-size: 1.8rem;
+            line-height: 2rem;
+          }
+        }
+      }
+    }
+
+    #section-introduction{
+      .clip{
+        .container{
+          .col-g{
+            margin-top: 30px;
+
+            .swiper{
+              height: 300px;
+
+              .swiper-wrapper{
+                .swiper-slide{
+                  height: 300px;
+                }
+              }
+            }
+          }
+
+          .col-d{
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Retina Screen
