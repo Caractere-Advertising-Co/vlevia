@@ -52,7 +52,11 @@
         }
         .col-d {
           p{
-            color: $secondary-color
+            color: $secondary-color;
+
+            a{
+              color: $primary-color;
+            }
           }
 
           .cta{
