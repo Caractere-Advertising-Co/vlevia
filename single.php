@@ -29,7 +29,7 @@ $ctaTr = get_field('cta-transition');
 <?php 
 
 $args = array(
-    'post-type' => 'job'
+    'post_type' => 'job'
 );
 
 $jobs = new WP_Query($args);
