@@ -13,6 +13,8 @@ $imgTr = get_field('image-transition');
 $contentTr = get_field('content-transition');
 $ctaTr = get_field('cta-transition');
 
+$titrJobs = get_field('titre_listing_jobs');
+
 ?>
 
 <header id="header">
@@ -28,6 +30,9 @@ $ctaTr = get_field('cta-transition');
 
 
 <section id="presa_jobs">
+    <div class="container">
+        <?php if($titrJobs): echo $titrJobs; endif;?>
+    </div>
     <div class="container">
         <div class="content_service">
             <?php 
