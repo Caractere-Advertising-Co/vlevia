@@ -82,10 +82,11 @@
           }
         }
 
-        .wpml-ls-current-language {
-          a {
-            color: $primary-color;
-            font-weight: 600;
+        .wpml-ls-item{
+          align-items: center;
+
+          a{
+            height: 15px;
           }
         }
 
