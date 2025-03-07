@@ -68,6 +68,11 @@
                     align-items: center;
                     justify-content: space-between;
                     border-bottom: 5px solid $primary-color; 
+                    transition: all ease-in 300ms;
+
+                    &:hover{
+                        border-bottom: 10px solid;
+                    }
                 }
         
                 p{
