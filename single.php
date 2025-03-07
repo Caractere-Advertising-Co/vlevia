@@ -43,7 +43,7 @@ foreach($jobs as $job):
             <?php echo '<p>'.$title.'</p>';?>Découvrir
         </div>
     </a>
-endforeach;?>
+<?php endforeach;?>
 
 <?php get_template_part( 'templates-parts/contact'); ?>
 <?php get_footer(); 
