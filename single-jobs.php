@@ -2,7 +2,7 @@
 
 /*
 Template Name: Jobs
-Template Post Type: Jobs, Job, job, jobs, 
+Template Post Type: Jobs, Job, job, jobs
 */
 
 get_header();
