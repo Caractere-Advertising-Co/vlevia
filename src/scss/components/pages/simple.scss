@@ -54,22 +54,29 @@
 
     #presa_jobs{
         .container{
-          border-top: 1px solid $middle-gray;
-          padding-top: 50px;
+            border-top: 1px solid $middle-gray;
+            padding-top: 50px;
     
-          .content_service{
-            border: none;
-            padding-top: 0;
-    
-            .document_ddl{
-              padding: 50px 30px;
-    
-              p{
-                text-align: left;
-                color: $secondary-color;
-              }
+            .content_service{
+                border: none;
+                padding-top: 0;
+        
+                .document_ddl{
+                    padding: 50px 30px;
+                    display: flex ;
+                    align-items: center;
+                    justify-content: space-between;
+                    border: 1px solid $light-gray; 
+                    box-shadow: 5px 5px 5px rgb(0 0 0 / 9%);
+                }
+        
+                p{
+                    text-align: left;
+                    color: $secondary-color;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                }
             }
-          }
         }
-      }
+    }
 }
