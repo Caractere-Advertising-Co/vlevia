@@ -1448,6 +1448,16 @@
       .container{
         .content_service{
           padding-left: 0;
+
+          .document_ddl{
+            padding: 30px 15px;
+            gap: 20px;
+          }
+
+          .block-img{
+            height: 33px;
+            width: 40px;
+          }
         }
       }
     }
