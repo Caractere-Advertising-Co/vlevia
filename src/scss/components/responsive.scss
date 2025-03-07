@@ -388,7 +388,6 @@
       }
   }
   
-  
   .page-template-services #liste-actualites {
       padding-bottom: 0px;
       border-bottom: 1px solid $light-gray;
@@ -1421,6 +1420,8 @@
 
   .page-template-actualites{
     #simple-page{
+      padding-top: 0;
+
       .container{
         .grid_articles{
           grid-template-columns: repeat(1, 1fr);
@@ -1431,6 +1432,18 @@
           }
         }
       }
+    }
+
+    #header{
+      .container{
+        margin-top: 150px;
+
+        .content{
+          width: 85vw;
+        }
+      }
+
+      padding-bottom: 50px;
     }
   }
 
