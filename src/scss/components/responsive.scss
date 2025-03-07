@@ -1535,13 +1535,37 @@
     }
 
     #section-introduction{
-      .container{
-        .col-d{
-          .cta{
-            letter-spacing: 2px;
-            text-align: center;
-            margin: auto;
-            width: calc(100% - 60px);
+      .clip{
+        .container{
+          .col-g{
+            margin-top: 30px;
+
+            .swiper{
+              height: 300px;
+
+              .swiper-wrapper{
+                .swiper-slide{
+                  height: 300px;
+                }
+              }
+            }
+          }
+
+          .col-d{
+            margin-top: 0;
+
+            span{
+              p{
+                text-align: left;
+              }
+            }
+          
+            .cta{
+              letter-spacing: 2px;
+              text-align: center;
+              margin: auto;
+              width: calc(100% - 60px);
+            }
           }
         }
       }
