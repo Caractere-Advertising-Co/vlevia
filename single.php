@@ -20,7 +20,7 @@ $titrJobs = get_field('titre_listing_jobs');
 <header id="header">
     <div class="container">
         <div class="content">
-            <?php if($titre): echo $titre; endif;?>
+            <?php if($titre): echo '<h1><strong>' . $titre . '</strong></h1>'; endif;?>
         </div>
     </div>
 </header>
