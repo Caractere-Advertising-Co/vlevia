@@ -32,11 +32,7 @@ $titPos = get_field('titre_postuler');?>
 
 <section id="simple-page">
     <div class="container">
-        <div class="colg">
-            <div class="intro from-bottom">
-                <?php if($titre) : echo $titre;endif;?>
-            </div>
-        </div>
+        <div class="colg"></div>
         <div class="cold">
             <div class="intro from-bottom"><?php if($content) : echo $content;endif;?></div>
         </div>
