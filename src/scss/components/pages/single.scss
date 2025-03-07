@@ -27,6 +27,44 @@
     }
   }
 
+  #section-introduction {
+    padding: 0;
+    margin: 0;
+    height: auto;
+
+    .clip{
+      background-color: $light;
+
+      .container {
+        .col-g {
+          margin: 0;
+          margin-top: 100px;
+  
+          .intro {
+  
+            h1 {
+              font-size: 3rem;
+              color: $light;
+              font-weight: 600;
+              line-height: 3.5rem;
+            }
+          }
+        }
+        .col-d {
+          p{
+            color: $secondary-color
+          }
+
+          .cta{
+            position: inherit;
+            margin-top: 50px;
+            bottom: auto;
+          }
+        }
+      }
+    }
+  }
+
   #simple-page {
     padding-top: 100px;
 
