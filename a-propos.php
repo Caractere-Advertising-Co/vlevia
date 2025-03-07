@@ -68,13 +68,13 @@ $txtLiv = get_field('texte_livraison');
 $ctaLiv = get_field('cta_livraison');
 ?>
 
-<header id="header">
+<section id="header">
     <div class="container">
         <div class="content">
             <?php if($titre): echo $titre; endif;?>
         </div>
     </div>
-</header>
+</section>
 
 <?php get_template_part( 'templates-parts/separator/separator-svg' );?>
 <?php get_template_part( 'templates-parts/section-introduction' );?>

@@ -23,7 +23,7 @@ $txtIntro = get_field('introduction');
 
 ?>
 
-<header id="header-simple-page" >
+<section id="header-simple-page" >
     <img src="<?php echo $bg_url;?>" alt="<?php echo $bg_header['title'];?>"/>
 
     <div class="container">
@@ -32,7 +32,7 @@ $txtIntro = get_field('introduction');
             <?php if($titre): echo $titre; endif;?>
         </div>
     </div>
-</header>
+</section>
 
 <section id="simple-page">
     <div class="container intro">

@@ -1518,6 +1518,23 @@
     }
   }
 
+  .page-template-simple-jobs{
+    #header{
+      .container{
+        margin-top: 150px;
+
+        .content{
+          width: 85vw;
+
+          h1{
+            font-size: 1.8rem;
+            line-height: 2rem;
+          }
+        }
+      }
+    }
+  }
+
   .single{
     #header{
       .container{

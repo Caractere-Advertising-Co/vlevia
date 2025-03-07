@@ -13,13 +13,13 @@ $cta = get_field('cta');
 
 ?>
 
-<header id="header">
+<section id="header">
     <div class="container">
         <div class="content">
             <?php if($titre): echo $titre; endif;?>
         </div>
     </div>
-</header>
+</section>
 
 <?php get_template_part( 'templates-parts/separator/separator-svg' );?>
 

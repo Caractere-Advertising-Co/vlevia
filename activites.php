@@ -66,9 +66,9 @@ $bgActu = get_field('bg_actu','options');
 
 ?>
 
-<header id="header-simple-page">
+<section id="header-simple-page">
     <?php get_template_part('templates-parts/separator/separator-svg');?>
-</header>
+</section>
 
 <section id="acteur-majeur">
     <div class="container">

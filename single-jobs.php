@@ -20,13 +20,13 @@ $contact      = get_field('contact');
 
 $titPos = get_field('titre_postuler');?>
 
-<header id="header">
+<section id="header">
     <div class="container">
         <div class="content">
             <?php if($titre): echo $titre; endif;?>
         </div>
     </div>
-</header>
+</section>
 
 <?php get_template_part( 'templates-parts/separator/separator-svg' );?>
 
