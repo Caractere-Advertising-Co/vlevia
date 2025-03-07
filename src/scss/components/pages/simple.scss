@@ -33,6 +33,7 @@
         margin-bottom: 0;
         height: fit-content;
         padding-bottom: 50px;
+        border-bottom: 0;
 
         .container{
             .col-g{
@@ -54,7 +55,6 @@
 
     #presa_jobs{
         .container{
-            border-top: 1px solid $middle-gray;
             padding-top: 50px;
     
             .content_service{
