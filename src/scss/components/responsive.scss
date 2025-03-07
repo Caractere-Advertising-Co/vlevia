@@ -1462,6 +1462,20 @@
       }
     }
   }
+
+  .jobs-template-single-jobs{
+    #header{
+      padding-bottom: 50px;
+      
+      .container{
+        margin-top: 150px;
+
+        .content{
+          width: 80vw;
+        }
+      }
+    }
+  }
 }
 
 // Retina Screen
