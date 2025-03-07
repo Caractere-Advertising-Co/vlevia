@@ -35,8 +35,8 @@ $args = array(
 $jobs = new WP_Query($args);
 
 foreach($jobs as $job):
-    $permalink = get_permalink( $job->ID );
-    $title = get_the_title( $job->ID );?>
+    $permalink = get_permalink( $job['id'] );
+    $title = get_the_title( $job['title'] );?>
     
     <a href="<?php echo $permalink;?>">
         <div class="document_ddl">
