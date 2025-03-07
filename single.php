@@ -29,21 +29,25 @@ $ctaTr = get_field('cta-transition');
 <?php 
 
 $args = array(
-    'post_type' => 'jobs'
+    'post_type' => 'jobs',
+	'post_status' => 'publish'
 );
 
-$jobs = new WP_Query($args);
+$query = new WP_Query($args);
 
-foreach($jobs as $job):
-    $permalink = get_permalink( $job['id'] );
-    $title = get_the_title( $job['title'] );?>
-    
-    <a href="<?php echo $permalink;?>">
-        <div class="document_ddl">
-            <?php echo '<p>'.$title.'</p>';?>Découvrir
-        </div>
-    </a>
-<?php endforeach;?>
+if($query->have_posts()):
+	while($query->have_posts()): $query->the_post();
+        $title = get_the_title();
+        $permalink = get_permalink( );
+
+        ?>
+      <a href="<?php echo $permalink;?>">
+            <div class="document_ddl">
+                <?php echo '<p>'.$title.'</p>';?>Découvrir
+            </div>
+        </a>
+	<?php endwhile;
+endif;?>
 
 <?php get_template_part( 'templates-parts/contact'); ?>
 <?php get_footer(); 
