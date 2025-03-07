@@ -17,15 +17,10 @@ $titrJobs = get_field('titre_listing_jobs');
 
 ?>
 
-<header id="header">
-    <div class="container">
-        <div class="content">
-            <?php if($titre): echo $titre; endif;?>
-        </div>
-    </div>
+<header id="header-simple-page">
+    <?php get_template_part('templates-parts/separator/separator-svg');?>
 </header>
 
-<?php get_template_part( 'templates-parts/separator/separator-svg' );?>
 <?php get_template_part( 'templates-parts/section-introduction' );?>
 
 <?php get_template_part( 'templates-parts/contact'); ?>
