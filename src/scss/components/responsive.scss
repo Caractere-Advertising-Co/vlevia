@@ -1535,30 +1535,13 @@
     }
 
     #section-introduction{
-      .clip{
-        .container{
-          .col-g{
-            margin-top: 30px;
-
-            .swiper{
-              height: 300px;
-
-              .swiper-wrapper{
-                .swiper-slide{
-                  height: 300px;
-                }
-              }
-            }
-          }
-
-          .col-d{
-            margin-top: 0;
-
-            span{
-              p{
-                text-align: left;
-              }
-            }
+      .container{
+        .col-d{
+          .cta{
+            letter-spacing: 2px;
+            text-align: center;
+            margin: auto;
+            width: calc(100% - 60px);
           }
         }
       }
@@ -1566,40 +1549,21 @@
 
     #presa_jobs{
       .container{
-          padding-top: 50px;
-  
-          .content_service{
-              border: none;
-              padding-top: 0;
-              padding-left: 25%;
-      
-              .document_ddl{
-                  padding: 50px 30px;
-                  display: flex ;
-                  align-items: center;
-                  justify-content: space-between;
-                  border-bottom: 5px solid $primary-color; 
-                  transition: all ease-in 300ms;
+        .content_service{
+          padding-left: 0;
 
-                  &:hover{
-                      border-bottom: 10px solid $primary-color;
-                  }
-              }
-      
-              p{
-                  text-align: left;
-                  color: $secondary-color;
-                  font-weight: 600;
-                  margin-bottom: 0;
-              }
-
-              .block-img{
-                  height: 30px;
-                  width: 30px;
-              }
+          .document_ddl{
+            padding: 30px 15px;
+            gap: 20px;
           }
+
+          .block-img{
+            height: 33px;
+            width: 40px;
+          }
+        }
       }
-  }
+    }
   }
 
   .single{
