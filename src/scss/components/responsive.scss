@@ -1429,6 +1429,11 @@
 
           .card_article{
             padding-bottom: 30px;
+
+            h3,
+            p{
+              min-height: 0;
+            }
           }
         }
       }
