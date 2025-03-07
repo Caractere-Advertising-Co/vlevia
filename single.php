@@ -47,7 +47,8 @@ $ctaTr = get_field('cta-transition');
                     ?>
                 <a href="<?php echo $permalink;?>">
                         <div class="document_ddl">
-                            <?php echo '<p>'.$title.'</p>';?>Découvrir
+                            <?php echo '<p>'.$title.'</p>';?>
+                            <img src="<?php echo get_bloginfo( 'url'). '/wp-content/themes/vlevia/assets/images/arrow_right_bottom-8.png';?>" alt="arrow" />
                         </div>
                     </a>
                 <?php endwhile;
