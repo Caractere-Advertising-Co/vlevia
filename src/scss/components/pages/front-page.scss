@@ -11,7 +11,7 @@
     width: 100%;
     display: block;
     position: absolute;
-    @include transBlack-to-black;
+    @include black-to-transBlack;
   }
 
   &::after{
