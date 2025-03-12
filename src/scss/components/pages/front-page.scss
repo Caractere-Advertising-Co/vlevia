@@ -5,6 +5,14 @@
   overflow: hidden;
   position: relative;
 
+  &::before{
+    content:'';
+    height: 200px;
+    width: 100%;
+    display: block;
+    @include transBlack-to-black;
+  }
+
   &::after{
     content: "";
     width: 100%;
