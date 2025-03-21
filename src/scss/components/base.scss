@@ -177,8 +177,8 @@ svg {
     color: $light;
     content: "";
     position: absolute;
-    margin-top: -10px;
-    margin-left: -30px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     transform: scaleX(0);
@@ -212,15 +212,15 @@ svg {
   margin-top: 50px;
 
   &::before {
-    transform-origin: right;
+    transform-origin: left;
     display: block;
   }
 
   &:hover {
-    color: #fff;
+    color: $light;
 
     &::before {
-      transform-origin: left;
+      transform-origin: right;
     }
   }
 }
