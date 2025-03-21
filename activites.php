@@ -128,7 +128,8 @@ $bgActu = get_field('bg_actu','options');
     </div>
 </section>
 
-<section id="portion-consommateur">
+<section id="portion-consommateur-2">
+    <span class="anchor" id="portion-consommateur"></span>
     <div class="container columns">
         <?php if($imgResp):?>
             <div class="block-img">
