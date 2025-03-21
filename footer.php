@@ -45,7 +45,6 @@ $copyright         = get_field('copyright','options');
             </div>
 
             <div class="col rs_footer"><?php if($cttCol3): echo $cttCol3;endif;?></div>
-            <div class="col col-4"><?php if($cttCol4): echo $cttCol4; endif;?></div>
         </div>
     </div>
     <div class="footer_middle">
