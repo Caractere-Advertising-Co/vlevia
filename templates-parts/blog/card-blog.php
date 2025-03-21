@@ -13,7 +13,7 @@ $intro = get_field('introduction');
 
     <div class="txt">
         <?php if($titre): echo '<h3>' .$titre. '</h3>'; endif;?>
-        <?php if($intro): echo '<p>' . strlen($intro) > 100 ? substr(strip_tags($intro),0,100).'...' : strip_tags($intro) ; . '</p>'; endif;?>
+        <?php if($intro): echo strlen($intro) > 100 ? '<p>' . substr(strip_tags($intro),0,100).'...</p>' : '<p>' . strip_tags($intro) . '</p>';endif;?>
 
         <a href="<?php echo the_permalink( );?>" class="cta-border">Lire</a>
     </div>
