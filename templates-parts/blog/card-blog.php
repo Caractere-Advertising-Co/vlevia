@@ -2,7 +2,7 @@
 
 $thmb = get_the_post_thumbnail_url();
 $titre = get_field('titre');
-$intro = get_field('texte_introduction');
+$intro = get_field('introduction');
 
 ?>
 
