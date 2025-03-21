@@ -89,7 +89,7 @@ $ctaLiv = get_field('cta_livraison');
             <div class="tiny-columns">
                 <?php echo '<h3>'.$v['libelle'].'</h3>';?>
                 <?php echo $v['description'];?>
-                <?php echo '<a href="'.$v['cta']['url'].'" class="cta">'.$v['cta']['title'].'</a>';?>
+                <?php if($v['cta']): echo '<a href="'.$v['cta']['url'].'" class="cta">'.$v['cta']['title'].'</a>'; endif;?>
             </div>
         <?php endforeach;?>
     </div>
