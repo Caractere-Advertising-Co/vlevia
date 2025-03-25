@@ -95,9 +95,7 @@ $ctaLiv = get_field('cta_livraison');
     </div>
 
     <?php if($bgVal):?>
-        <div class="block-img section-background">
-            <img src="<?php echo $bgVal['url'];?>" alt="<?php echo $bgVal['name'];?>" />
-        </div>
+        <div class="block-img section-background" style="url('<?php echo $bgVal['url'];?>');">    </div>
     <?php endif;?>
 </section>
 
