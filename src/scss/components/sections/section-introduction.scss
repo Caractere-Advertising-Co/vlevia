@@ -9,15 +9,14 @@
   z-index: 1;
 
   .col-g {
-    margin-top: 250px;
     position: relative;
 
     .block-img{
       height: 180px;
       width: 200px;
       position: absolute;
-      top: -115px;
-      left: -115px;
+      top: -30px;
+      right: 0;
       z-index: 5;
       transform: rotateY(180deg);
     }
