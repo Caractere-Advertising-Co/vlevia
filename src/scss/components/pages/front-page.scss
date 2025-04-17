@@ -195,12 +195,13 @@
         p{
           color: $primary-color;
           font-weight: 600;
+          text-transform: uppercase;
         }
       }
 
       &:hover{
         img{
-          opacity: .3;
+          opacity: .2;
         }
 
         .title_ilu{
