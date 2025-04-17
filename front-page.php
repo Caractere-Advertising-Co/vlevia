@@ -116,7 +116,7 @@ $bgActu         = get_field('bg_actu','options');
     <div class="container columns">
         <div class="colg">
             <?php if($txtVal): echo $txtVal; endif;?>
-            <?php if($ctaVal): echo '<a href="'.$ctaVal['url'].'">'.$cta['title'].'</a>'; endif;?>
+            <?php if($ctaVal): echo '<a href="'.$ctaVal['url'].'" class="cta">'.$ctaVal['title'].'</a>'; endif;?>
             
             <?php if($imgVal_1):?>
                 <div class="block-img">
