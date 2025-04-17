@@ -25,7 +25,7 @@
                 case 'de-DE':
                     $themeLocation = 'Menu Principal Deutsch';
                     break;
-            ;
+            endswitch;
 
             wp_nav_menu(array(
                 'theme_location' => $themeLocation,
