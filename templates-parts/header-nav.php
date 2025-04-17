@@ -14,28 +14,15 @@
     </div>
     <div class="col-d">
         <div class="secondary-navigation">
-            <?php 
-            switch( pll_current_language()):
-                case 'fr-FR':
-                    $themeLocation = 'Menu Principal Français';
-                    break;
-                case 'en-EN':
-                    $themeLocation = 'Menu Principal English';
-                    break;
-                case 'de-DE':
-                    $themeLocation = 'Menu Principal Deutsch';
-                    break;
-            endswitch;
-
-            wp_nav_menu(array(
-                'theme_location' => $themeLocation,
+            <?php wp_nav_menu(array(
+                'theme_location' => 'secondary',
                 'menu_class' => 'semi-bold nav'
             ));?>
         </div>
 
         <div class="primary-navigation">
             <?php wp_nav_menu(array(
-                'theme_location' => 'Menu Principal Français',
+                'theme_location' => 'main',
                 'menu_class' => 'semi-bold nav'
             ));?>
         </div>
