@@ -194,14 +194,15 @@
 
         p{
           color: $primary-color;
-          font-weight: 600;
+          font-weight: 800;
           text-transform: uppercase;
+          letter-spacing: 2px;
         }
       }
 
       &:hover{
         img{
-          opacity: .2;
+          opacity: .15;
         }
 
         .title_ilu{
