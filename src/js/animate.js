@@ -1,4 +1,5 @@
 import inView from "in-view";
+import gsap from "gsap";
 
 $(document).ready(function () {
   //IN-VIEW
@@ -69,6 +70,37 @@ $(document).ready(function () {
 
       animate();
     });
+  });
+
+
+  gsap.set('.item-cat-menu .hover-img-cat', { yPercent: -90, xPercent: 10 });
+
+  let activeImage;
+  gsap.utils.toArray(".item-cat-menu").forEach((el) => {
+    let image = el.querySelector('.hover-img-cat'),
+        setX, setY,
+        align = e => {
+            setX(e.clientX);
+            setY(e.clientY);
+        },
+        startFollow = () => document.addEventListener("mousemove", align),
+        stopFollow = () => document.removeEventListener("mousemove", align),
+        fade = gsap.to(image, {autoAlpha: 1, ease: "none", paused: true, onReverseComplete: stopFollow});
+    
+    el.addEventListener('mouseenter', (e) => {
+      fade.play();
+      startFollow();
+      if (activeImage) { // if there's an actively-animating one, we should match its position here
+        gsap.set(image, {x: gsap.getProperty(activeImage, "x"), y: gsap.getProperty(activeImage, "y")});
+      }
+      activeImage = image;
+      setX = gsap.quickTo(image, "x", {duration: 0.6, ease: "power3"}),
+      setY = gsap.quickTo(image, "y", {duration: 0.6, ease: "power3"})
+      align(e);
+    });
+    
+    el.addEventListener('mouseleave', () => fade.reverse());
+  
   });
 });
 

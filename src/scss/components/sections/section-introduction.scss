@@ -1,12 +1,12 @@
 #section-introduction {
   margin-top: -200px;
-  padding-bottom: 150px;
+  padding-bottom: 250px;
   border-bottom: 1px solid $light-gray;
   @include transBlack-to-black;
   width: 100vw;
   height: 500px;
   position: relative;
-  margin-bottom: 300px;
+  z-index: 1;
 
   .col-g {
     margin-top: 250px;
@@ -46,12 +46,13 @@
 
     p{
       color: $light;
+      line-height: 1.5rem;
+      margin-bottom: 10px;
     }
 
     .cta{
-      position: absolute;
-      bottom: 260px;
       z-index: 2;
+      margin-top: 30px;
     }
   }
 }

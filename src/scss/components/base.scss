@@ -92,7 +92,11 @@ header {
       font-weight: 100;
 
       strong {
-        color: $primary-color;
+        color: $secondary-color;
+
+        em{
+          color: $primary-color;
+        }
       }
     }
 
