@@ -15,14 +15,14 @@
     <div class="col-d">
         <div class="secondary-navigation">
             <?php wp_nav_menu(array(
-                'theme_location' => 'secondary',
+                'theme_location' => 'Menu Principal Français',
                 'menu_class' => 'semi-bold nav'
             ));?>
         </div>
 
         <div class="primary-navigation">
             <?php wp_nav_menu(array(
-                'theme_location' => 'main',
+                'theme_location' => 'Menu Principal Français',
                 'menu_class' => 'semi-bold nav'
             ));?>
         </div>
