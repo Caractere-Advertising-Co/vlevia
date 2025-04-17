@@ -166,6 +166,51 @@
   }
 }
 
+#grid-illustration-category{
+  padding: 100px 0;
+
+  .columns{
+    gap: 15px;
+
+    .card-category + .card-category{
+      border-left: 1px solid $light-gray;
+      padding-left: 15px;
+    }
+
+    .card-category{
+      position: relative;
+
+      .title_ilu{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all ease-in 300ms;
+
+        p{
+          color: $primary-color;
+          font-weight: 600;
+        }
+      }
+
+      &:hover{
+        img{
+          opacity: .3;
+        }
+
+        .title_ilu{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
 #nos-valeurs{
   @include white-to-liGray;
   padding-top: 250px;
