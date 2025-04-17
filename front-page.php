@@ -72,6 +72,23 @@ $bgActu         = get_field('bg_actu','options');
 
 <?php get_template_part( 'templates-parts/section-citation' );?>
 
+<section id="grid-illustration-category">
+    <div class="container columns">
+        <?php if(have_rows('grid-illustration')):
+            while(have_rows('grid-illustration')): the_row();
+                $img   = get_sub_field('img_ilu');
+                $link  = get_sub_field('link_ilu');?>
+
+                <a href="<?php echo $link['url'];?>" class="card-category">
+                    <img src="<?php echo $img['url'];?>" alt="<?php echo $img['name'];?>" />
+                    <div class="title_ilu">
+                        <p><?php echo $link['title'];?></p>
+                    </div>
+                </a>
+            <?php endwhile;
+        endif;?>
+    </div>
+</section>
 
 <?php get_template_part( 'templates-parts/section-savoirfaire' );?>
 
