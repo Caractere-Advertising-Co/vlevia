@@ -414,11 +414,15 @@
   }
   
   #savoir-faire{
-      padding-top: 30px !important;
-  
+    padding-top: 30px !important;
+      
+    .columns{
+      gap: 30px;
+
       .col-1{
         width: 55%;
-        padding: 100px 0 0;
+        padding: 0;
+        margin-bottom: 0;
       }
   
       .col-2{
@@ -427,14 +431,16 @@
       }
   
       .col-3{
-        margin-left: -10%;
-        width: 80%;
+        margin-left: auto;
+        width: 100%;
   
         .block-img{
           height: 250px;
           position: relative;
+          margin-bottom: -120px;
         }
       }
+    }
   }
 
   .custom-shape-divider-bottom-1733734661{  
