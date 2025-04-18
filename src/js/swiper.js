@@ -23,6 +23,23 @@ const swiperFrontPage = new Swiper(".swiper-resp", {
   },
 });
 
+const swiperCatProduct = new Swiper(".swiper-cat-product",{
+  cssMode: true,
+  loop: true,
+  slidesPerView: 5,
+  spaceBetween: 30, 
+
+  breakpoints:{
+    320:{
+      slidesPerView: 1.2,
+      autoplay: true
+    },
+    480:{
+      slidesPerView: 5
+    }
+  }
+});
+
 const swiperGalerie = new Swiper(".swiper-galerie",{
   cssMode: true,
   slidesPerView: 3,

@@ -51,22 +51,28 @@ $bgActu         = get_field('bg_actu','options');
 
 <?php get_template_part( 'templates-parts/section-introduction');?>
 
-
 <section id="grid-category-product">
-    <div class="container columns">
-        <?php if(have_rows('grid-category')):
-            while(have_rows('grid-category')): the_row();
-                $img   = get_sub_field('img_cat');
-                $link  = get_sub_field('link_cat');?>
+    <div class="container">
+        <div class="swiper swiper-cat-product">
+            <div class="swiper-wrapper">
+                <?php if(have_rows('grid-category')):
+                    while(have_rows('grid-category')): the_row();
+                        $img   = get_sub_field('img_cat');
+                        $link  = get_sub_field('link_cat');?>
 
-                <a href="<?php echo $link['url'];?>" class="card-category">
-                    <img src="<?php echo $img['url'];?>" alt="<?php echo $img['name'];?>" />
-                    <div class="title_cat">
-                        <h4><?php echo $link['title'];?></h4>
-                    </div>
-                </a>
-            <?php endwhile;
-            endif;?>
+                        <div class="swiper-slide">
+                            <a href="<?php echo $link['url'];?>" class="card-category">
+                                <img src="<?php echo $img['url'];?>" alt="<?php echo $img['name'];?>" />
+                                <div class="title_cat">
+                                    <h4><?php echo $link['title'];?></h4>
+                                </div>
+                            </a>
+                        </div>
+                    <?php endwhile;
+                endif;?>
+            </div>
+            <div class="swiper-navigation"></div>
+        </div>
     </div>
 </section>
 

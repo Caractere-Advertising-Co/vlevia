@@ -125,40 +125,48 @@
   z-index: 1;
   position: relative;
 
-  .columns{
-    gap: 20px;
-    
-    .card-category{
-      width: calc((100% - 80px) / 5);
-      position: relative;
-      overflow: hidden;
+  .container{
+    .swiper-cat-product{
       height: 350px;
-      filter: brightness(.7);
-      transition: all ease 200ms;
+      overflow: hidden;
+      width: 100%;
 
-      .title_cat{
-        background-color: $primary-color;
-        padding: 10px 20px;
-        position: absolute;
-        width: calc(100% - 40px);
-        bottom: 0;
-        transform: translateY(50px);
-        transition: all ease-in 300ms;
+      .swiper-wrapper{
+        .swiper-slide{
+          height: 350px;
 
-        h4{
-          color: $light;
-          font-size: .8rem;
-          font-weight: 600;
-          line-height: 1.2rem;
-          text-align: center;
-        }
-      }
-
-      &:hover{
-        filter: brightness(1);
-
-        .title_cat{
-          transform: translateY(0px);
+          .card-category{
+            position: relative;
+            overflow: hidden;
+            filter: brightness(.7);
+            transition: all ease 200ms;
+      
+            .title_cat{
+              background-color: $primary-color;
+              padding: 10px 20px;
+              position: absolute;
+              width: calc(100% - 40px);
+              bottom: 0;
+              transform: translateY(50px);
+              transition: all ease-in 300ms;
+      
+              h4{
+                color: $light;
+                font-size: .8rem;
+                font-weight: 600;
+                line-height: 1.2rem;
+                text-align: center;
+              }
+            }
+      
+            &:hover{
+              filter: brightness(1);
+      
+              .title_cat{
+                transform: translateY(0px);
+              }
+            }
+          }
         }
       }
     }
