@@ -61,7 +61,5 @@ $imgCarte = get_field('image_carte');
     </div>
 </section>
 
-<?php 
-
-get_template_part( 'templates-parts/section-citation' );
+<?php get_template_part( 'templates-parts/section-citation' );
 get_footer();
