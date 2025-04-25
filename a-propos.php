@@ -205,6 +205,5 @@ $ctaLiv = get_field('cta_livraison');
     </div>
 </section>
 
-<?php get_template_part( 'templates-parts/section-actualites' );?>
-
+<?php get_template_part( 'templates-parts/section-citation' );?>
 <?php get_footer();
