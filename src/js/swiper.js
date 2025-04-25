@@ -89,5 +89,4 @@ const swiperAcco = new Swiper(".swiper-acco", {
 const swiperTabsVal = new Swiper(".swiper-tabs-valeurs",{
   slidesPerView: 4,
   loop: true,
-  spaceBetween: 20,
 })
