@@ -160,7 +160,7 @@ $bgActu         = get_field('bg_actu','options');
         <?php 
         $typeElem = get_field('type_elemVal');
         
-        if($typeEle = 'video'):?>
+        if($typeElem = 'video'):?>
             <?php if($videoVal):?>
                 <video controls><source src="<?php echo $videoVal['url'];?>" type="video/mp4" /></video>
             <?php endif;?>
