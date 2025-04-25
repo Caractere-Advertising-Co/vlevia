@@ -114,8 +114,9 @@
         &::before {
           content: "|";
           color: $primary-color;
-          font-weight: 300;
+          font-weight: 500;
           margin-right: 10px;
+          font-size: .8rem;
         }
 
         select{
