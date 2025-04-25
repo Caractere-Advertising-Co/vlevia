@@ -122,6 +122,9 @@
           color: $light;
           background: none;
           border: none;
+          text-transform: uppercase;
+          font-family: "Sofia",sans-serif;
+          font-size: .7rem;
 
           option{
             color: $light;
@@ -130,6 +133,7 @@
             letter-spacing: 5px;
             font-weight: 300;
             margin-bottom: 0;
+            font-size: .7rem;
           }
         }
       }
