@@ -157,8 +157,18 @@ $bgActu         = get_field('bg_actu','options');
     </div>
 
     <div class="container content-video">
-        <?php if($videoVal):?>
-            <video controls><source src="<?php echo $videoVal['url'];?>" type="video/mp4" /></video>
+        <?php 
+        $typeElem = get_field('type_elemVal');
+        
+        if($typeEle = 'video'):?>
+            <?php if($videoVal):?>
+                <video controls><source src="<?php echo $videoVal['url'];?>" type="video/mp4" /></video>
+            <?php endif;?>
+        <?php else :?>
+            <?php if($videoVal):?>
+                <div class="block-img">
+                    <img src="<?php echo $videoVal['url'];?>"/>
+                </div>
         <?php endif;?>
     </div>
 </section>
