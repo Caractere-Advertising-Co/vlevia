@@ -294,7 +294,8 @@
   .content-video{
     position: relative;
 
-    video{
+    video,
+    .block-img{
       width: 600px;
       background-color: $secondary-color;
       margin:auto;
