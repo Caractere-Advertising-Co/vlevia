@@ -85,3 +85,8 @@ const swiperAcco = new Swiper(".swiper-acco", {
     prevEl: ".swiper-acco-button-prev",
   },
 });
+
+const swiperTabsVal = new Swiper(".swiper-tabs-valeurs",{
+  slidesPerView: 4,
+  loop: true,
+})

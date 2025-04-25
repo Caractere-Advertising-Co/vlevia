@@ -85,13 +85,17 @@ $ctaLiv = get_field('cta_livraison');
         <div class="cold"><?php if($intro): echo $intro;endif;?></div>
     </div>
     <div class="container columns" id="tabs-valeurs">
-        <?php foreach($vals as $v):?>
-            <div class="tiny-columns">
-                <?php echo '<h3>'.$v['libelle'].'</h3>';?>
-                <?php echo $v['description'];?>
-                <?php if($v['cta']): echo '<a href="'.$v['cta']['url'].'" class="cta">'.$v['cta']['title'].'</a>'; endif;?>
+        <div class="swiper swiper-tabs-valeurs">
+            <div class="swiper-wrapper">
+                <?php foreach($vals as $v):?>
+                    <div class="swiper-slide tiny-columns">
+                        <?php echo '<h3>'.$v['libelle'].'</h3>';?>
+                        <?php echo $v['description'];?>
+                        <?php if($v['cta']): echo '<a href="'.$v['cta']['url'].'" class="cta">'.$v['cta']['title'].'</a>'; endif;?>
+                    </div>
+                <?php endforeach;?>
             </div>
-        <?php endforeach;?>
+        </div>
     </div>
 
     <?php if($bgVal):?>
