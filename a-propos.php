@@ -92,10 +92,12 @@ $bgActu         = get_field('bg_actu','options');
         <div class="swiper swiper-tabs-valeurs">
             <div class="swiper-wrapper">
                 <?php foreach($vals as $v):?>
-                    <div class="swiper-slide tiny-columns">
-                        <?php echo '<h3>'.$v['libelle'].'</h3>';?>
-                        <?php echo $v['description'];?>
-                        <?php if($v['cta']): echo '<a href="'.$v['cta']['url'].'" class="cta">'.$v['cta']['title'].'</a>'; endif;?>
+                    <div class="swiper-slide">
+                        <div class="tiny-columns">
+                            <?php echo '<h3>'.$v['libelle'].'</h3>';?>
+                            <?php echo $v['description'];?>
+                            <?php if($v['cta']): echo '<a href="'.$v['cta']['url'].'" class="cta">'.$v['cta']['title'].'</a>'; endif;?>
+                        </div>
                     </div>
                 <?php endforeach;?>
             </div>
