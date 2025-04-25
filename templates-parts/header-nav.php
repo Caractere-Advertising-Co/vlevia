@@ -18,7 +18,7 @@
                 'theme_location' => 'secondary',
                 'menu_class' => 'semi-bold nav'
             ));?>
-            <?php pll_the_languages( array( 'dropdown' => 1 ) ); ?>
+            <p class="selectLangue"><?php pll_the_languages( array( 'dropdown' => 1 ) ); ?></p>
         </div>
 
         <div class="primary-navigation">

@@ -107,6 +107,25 @@
           padding: 5px 20px;
         }
       }
+
+      .selectLangue{
+        margin-left: 10px;
+
+        &::before {
+          content: "|";
+          color: $primary-color;
+          font-weight: 300;
+          margin-right: 10px;
+        }
+
+        select{
+          text-transform: uppercase;
+          font-family: "Sofia";
+          letter-spacing: 5px;
+          font-weight: 300;
+          margin-bottom: 0;
+        }
+      }
     }
 
     .primary-navigation {
