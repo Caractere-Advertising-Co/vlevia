@@ -39,33 +39,37 @@ $imgLead = get_field('image_service');
 $txtLead = get_field('texte_service');
 $ctaLiP  = get_field('cta_service');
 
-$ctaCtLip = get_field('cta-service-contact');
+$ctaCtLip  = get_field('cta-service-contact');
 $statsLead = get_field('stats-service');
 
 /* Generation */
 
-$titGen = get_field('titre_generation');
-$txtGen = get_field('texte_generation');
-$galGen = get_field('galerie_generation');
-$ctaGen = get_field('cta_generation');
+$titGen   = get_field('titre_generation');
+$txtGen   = get_field('texte_generation');
+$galGen   = get_field('galerie_generation');
+$ctaGen   = get_field('cta_generation');
 
 /* Responsable */
 
-$titResp = get_field('titre_responsable');
-$txtResp = get_field('texte_responsable');
-$ctaResp = get_field('cta_responsable');
+$titResp   = get_field('titre_responsable');
+$txtResp   = get_field('texte_responsable');
+$ctaResp   = get_field('cta_responsable');
 
-$imgResp = get_field('image_responsable');
+$imgResp   = get_field('image_responsable');
 $imgResp_2 = get_field('image_2_responsable');
 
 /* Livraison */
 
-$surLiv = get_field('surtitre_livraison');
-$imgLiv = get_field('image_livraison');
+$surLiv   = get_field('surtitre_livraison');
+$imgLiv   = get_field('image_livraison');
 $imgLiv_2 = get_field('image_livraison_2');
-$titLiv = get_field('titre_livraison');
-$txtLiv = get_field('texte_livraison');
-$ctaLiv = get_field('cta_livraison');
+$titLiv   = get_field('titre_livraison');
+$txtLiv   = get_field('texte_livraison');
+$ctaLiv   = get_field('cta_livraison');
+
+/* Footer */
+$bgActu         = get_field('bg_actu','options');
+
 ?>
 
 <section id="header">
@@ -206,4 +210,5 @@ $ctaLiv = get_field('cta_livraison');
 </section>
 
 <?php get_template_part( 'templates-parts/section-citation' );?>
+<section id="big-text" <?php if($bgActu): echo 'style="background-image:url(\''.$bgActu["url"].'\');"'; endif;?>></section>
 <?php get_footer();
