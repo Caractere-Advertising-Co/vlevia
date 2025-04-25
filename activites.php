@@ -219,6 +219,7 @@ $bgActu = get_field('bg_actu','options');
     </div>
 </section>
 
+<?php get_template_part( 'templates-parts/section-citation' );?>
 <section id="liste-actualites" <?php if($bgActu): echo 'style="background-image:url(\''.$bgActu["url"].'\');"'; endif;?>></section>
 
 <?php get_footer();
