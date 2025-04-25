@@ -119,11 +119,18 @@
         }
 
         select{
-          text-transform: uppercase;
-          font-family: "Sofia";
-          letter-spacing: 5px;
-          font-weight: 300;
-          margin-bottom: 0;
+          color: $light;
+          background: none;
+          border: none;
+
+          option{
+            color: $light;
+            text-transform: uppercase;
+            font-family: "Sofia";
+            letter-spacing: 5px;
+            font-weight: 300;
+            margin-bottom: 0;
+          }
         }
       }
     }
