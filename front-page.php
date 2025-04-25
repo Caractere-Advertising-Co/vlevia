@@ -169,7 +169,8 @@ $bgActu         = get_field('bg_actu','options');
                 <div class="block-img">
                     <img src="<?php echo $videoVal['url'];?>"/>
                 </div>
-        <?php endif;?>
+        <?php endif;
+        endif;?>
     </div>
 </section>
 
