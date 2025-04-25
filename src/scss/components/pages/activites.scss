@@ -1,48 +1,48 @@
 .page-template-activites{
-    .header{
-        .col-d{
-            .primary-navigation,
-            .secondary-navigation{
-                #menu-navigation-principale,
-                #menu-navigation-principale-neerlandais{
-                    li{
-                        a{
-                            color: $dark;
+    // .header{
+    //     .col-d{
+    //         .primary-navigation,
+    //         .secondary-navigation{
+    //             #menu-navigation-principale,
+    //             #menu-navigation-principale-neerlandais{
+    //                 li{
+    //                     a{
+    //                         color: $dark;
 
-                            &::after{
-                                border-color: $dark;
-                            }
+    //                         &::after{
+    //                             border-color: $dark;
+    //                         }
 
-                            .block-img{
-                                img{
-                                    filter: invert(1);
-                                }
-                            }
-                        }
-                    }
-                }
+    //                         .block-img{
+    //                             img{
+    //                                 filter: invert(1);
+    //                             }
+    //                         }
+    //                     }
+    //                 }
+    //             }
 
-                .menu-menu-secondaire-container{
-                    #menu-menu-secondaire{
-                        li{
-                            a{
-                                color: $dark;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+    //             .menu-menu-secondaire-container{
+    //                 #menu-menu-secondaire{
+    //                     li{
+    //                         a{
+    //                             color: $dark;
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
-    #header-simple-page{
-        height: 350px;
-        background-color: #f6f6f6;
+    // #header-simple-page{
+    //     height: 350px;
+    //     background-color: $secondary-color;
 
-        &::before{
-            content: inherit;
-        }
-    }
+    //     &::before{
+    //         content: inherit;
+    //     }
+    // }
 
     #acteur-majeur{
         .container{
