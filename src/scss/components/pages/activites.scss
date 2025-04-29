@@ -377,7 +377,11 @@
     }
 
     #citation{
-      margin: 450px auto 0;
+      margin: 400px auto 0;
+
+      .top_content{
+        margin: 0;
+      }
     }
 
     #liste-actualites{
