@@ -141,7 +141,7 @@
           .card-category{
             position: relative;
             overflow: hidden;
-            filter: brightness(.7);
+            filter: brightness(1);
             transition: all ease 200ms;
       
             .title_cat{
@@ -163,7 +163,7 @@
             }
       
             &:hover{
-              filter: brightness(1);
+              filter: brightness(.7);
       
               .title_cat{
                 transform: translateY(0px);
