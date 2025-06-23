@@ -903,6 +903,25 @@
       }
     }
   }
+
+  #portion-consommateur-2 {
+    .columns {
+      .texte {
+        width: calc(100% - 40px);
+
+        &::before {
+          width: 90%;
+        }
+      }
+
+      .block-img-2 {
+        width: 250px;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: -120px;
+      }
+    }
+  }
   // FRONT-PAGE
 
   .home {
@@ -1450,7 +1469,7 @@
           margin-bottom: 0;
 
           .block-img {
-            margin-top: -50px;
+            margin-top: 0px;
             height: 400px;
           }
         }
