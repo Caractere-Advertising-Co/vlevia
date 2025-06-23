@@ -843,7 +843,8 @@
     padding-top: 30px !important;
 
     .columns {
-      gap: 50px;
+      gap: 30px;
+      padding-bottom: 20px;
 
       .colg {
         width: 100%;
@@ -889,6 +890,7 @@
         width: 100%;
         margin-left: 0;
         height: 220px;
+        position: relative;
       }
     }
   }
