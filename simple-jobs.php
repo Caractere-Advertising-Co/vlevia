@@ -58,6 +58,9 @@ $titrJobs = get_field('titre_listing_jobs');
                         </div>
                     </a>
                 <?php endwhile;
+
+            else : 
+                echo '<p>Il n\'y a aucun poste à pourvoir pour le moment</p>';
             endif;?>
         </div>
     </div>
