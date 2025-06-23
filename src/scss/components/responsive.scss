@@ -1484,31 +1484,6 @@
       }
     }
 
-    #transport-logistique {
-      margin-top: 0;
-      padding-top: 0;
-      height: auto;
-      background: #fff;
-      background: -moz-linear-gradient(270deg, #fff 90%, #000 90%);
-      background: -webkit-linear-gradient(270deg, #fff 90%, #000 90%);
-      background: linear-gradient(270deg, #fff 90%, #000 90%);
-
-      .columns {
-        .col-g {
-          .block-img {
-            height: 400px;
-            margin-bottom: 0;
-          }
-        }
-
-        .col-d {
-          width: 85%;
-          padding-left: 15%;
-          margin-bottom: -100px;
-        }
-      }
-    }
-
     #liste-actualites {
       height: 650px;
     }
@@ -1678,6 +1653,31 @@
             width: 40px;
           }
         }
+      }
+    }
+  }
+
+  #transport-logistique {
+    margin-top: 0;
+    padding-top: 0;
+    height: auto;
+    background: #fff;
+    background: -moz-linear-gradient(270deg, #fff 90%, #000 90%);
+    background: -webkit-linear-gradient(270deg, #fff 90%, #000 90%);
+    background: linear-gradient(270deg, #fff 90%, #000 90%);
+
+    .columns {
+      .col-g {
+        .block-img {
+          height: 400px;
+          margin-bottom: 0;
+        }
+      }
+
+      .col-d {
+        width: 85%;
+        padding-left: 15%;
+        margin-bottom: -100px;
       }
     }
   }
