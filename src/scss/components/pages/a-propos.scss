@@ -4,25 +4,25 @@
     padding-bottom: 100px;
     background-color: $secondary-color;
 
-    .container{
+    .container {
       padding-top: 200px;
 
-      h1{
+      h1 {
         color: $light;
         font-weight: 400;
 
-        strong{
+        strong {
           font-weight: 600;
         }
       }
     }
   }
 
-  .custom-shape-divider-bottom-1733734661{
-        background: linear-gradient(180deg, #fff 5%, #000 5%);
+  .custom-shape-divider-bottom-1733734661 {
+    background: linear-gradient(180deg, #fff 5%, #000 5%);
     position: inherit;
 
-    svg{
+    svg {
       fill: $light;
     }
   }
@@ -32,16 +32,15 @@
     margin: 0;
     height: auto;
 
-    .clip{
+    .clip {
       background-color: $light;
 
       .container {
         .col-g {
           margin: 0;
           margin-top: 100px;
-  
+
           .intro {
-  
             h1 {
               font-size: 3rem;
               color: $light;
@@ -51,11 +50,11 @@
           }
         }
         .col-d {
-          p{
-            color: $secondary-color
+          p {
+            color: $secondary-color;
           }
 
-          .cta{
+          .cta {
             position: inherit;
             margin-top: 50px;
             bottom: auto;
@@ -65,30 +64,34 @@
     }
   }
 
-  #section-valeurs{
-    #intro-valeurs{
+  #section-valeurs {
+    #intro-valeurs {
       padding-top: 200px;
-    
+
       .colg,
-      .cold{
+      .cold {
         width: 50%;
-    
+
         h2 {
           margin-bottom: 30px;
           color: $dark;
 
-          strong{
+          strong {
             color: $primary-color;
           }
         }
       }
     }
 
-    #tabs-valeurs{
-      .tiny-columns{
+    #tabs-valeurs {
+      .swiper-tabs-valeurs {
+        width: 100%;
+      }
+
+      .tiny-columns {
         padding: 20px;
 
-        h3{
+        h3 {
           color: $primary-color;
           font-size: 1rem;
           letter-spacing: 3px;
@@ -99,74 +102,74 @@
           min-height: 50px;
         }
 
-        p{
-          font-size: .9rem;
+        p {
+          font-size: 0.9rem;
           text-align: left;
         }
 
-        .cta{
+        .cta {
           text-transform: uppercase;
           color: $middle-gray;
           background: none;
           padding: 0;
 
-          &::before{
+          &::before {
             content: none;
           }
 
-          &:hover{
+          &:hover {
             font-weight: 800;
           }
         }
       }
 
-      .swiper-slide + .swiper-slide{
+      .swiper-slide + .swiper-slide {
         border-left: 1px solid $light-gray;
       }
     }
 
-    .section-background{
+    .section-background {
       height: 300px;
       margin-top: 100px;
       background-attachment: fixed !important;
     }
   }
 
-  #leader{
+  #leader {
     background-color: $dark;
     padding: 100px 0;
 
-    .columns{
-      .col-g{
+    .columns {
+      .col-g {
         width: 70%;
 
-        h3{
+        h3 {
           color: $primary-color;
           text-transform: uppercase;
           letter-spacing: 3px;
           font-weight: 600;
           font-size: 1rem;
         }
-    
-        h2{
+
+        h2 {
           color: $light;
           margin: 10px auto 30px 0;
         }
 
-        .block-img{
+        .block-img {
           height: 500px;
         }
       }
 
-      .col-d{
+      .col-d {
         width: 30%;
         padding-top: 200px;
 
-        p{
-          color:$light;
+        p {
+          color: $light;
         }
 
-        .cta{
+        .cta {
           background: none;
           color: $primary-color;
           text-transform: uppercase;
@@ -181,8 +184,8 @@
           align-items: center;
           width: 150px;
 
-          &::after{
-            content: '';
+          &::after {
+            content: "";
             width: 10px;
             height: 10px;
             display: block;
@@ -190,13 +193,13 @@
             border-top: 2px solid;
             transform: rotate(45deg);
             border-color: $light;
-            transition: all ease-in 300ms
+            transition: all ease-in 300ms;
           }
-    
-          &:hover{
-            color : $light;
-    
-            &::after{
+
+          &:hover {
+            color: $light;
+
+            &::after {
               border-color: $primary-color;
             }
           }
@@ -204,13 +207,13 @@
       }
     }
 
-    .statsBlock{
+    .statsBlock {
       display: flex;
       gap: 30px;
       margin-top: -100px;
       justify-content: flex-end;
 
-      .block-stat{
+      .block-stat {
         background-color: $primary-color;
         color: $light;
         height: 150px;
@@ -219,77 +222,75 @@
         align-items: center;
         justify-content: center;
 
-        p{
+        p {
           text-align: center;
           font-size: 2rem;
           line-height: 2.3rem;
         }
 
-        &:first-child{
+        &:first-child {
           background-color: $dark-gray;
         }
       }
     }
 
-    .cta{
+    .cta {
       margin: 50px auto 0;
     }
   }
 
-  #card-news{
+  #card-news {
     padding: 100px 0;
 
-    .container{
+    .container {
       gap: 0;
 
-      .col-g{
+      .col-g {
         width: 50%;
         position: relative;
-        z-index: 1; 
+        z-index: 1;
 
-        .content{
+        .content {
           background-color: $light;
           width: calc(100% - 80px);
           padding: 50px 80px 50px 0;
           margin-top: 150px;
 
-          h2{
+          h2 {
             color: $secondary-color;
             margin-bottom: 40px;
 
-            strong{
+            strong {
               color: $primary-color;
             }
           }
-          
         }
-
       }
 
-      .col-d{
+      .col-d {
         width: 62.5%;
         margin-left: -10%;
         position: relative;
         z-index: 0;
 
-        .swiper{
-          .swiper-wrapper{
-            .swiper-slide{
+        .swiper {
+          .swiper-wrapper {
+            .swiper-slide {
               height: 500px;
             }
           }
 
           .swiper-button-prev,
-          .swiper-button-next{
+          .swiper-button-next {
             left: auto;
             right: 0;
           }
 
-          .swiper-button-prev{
+          .swiper-button-prev {
             right: 50px;
             background-color: $light;
 
-            &::after{
+            &::after {
               color: $secondary-color;
             }
           }
@@ -298,42 +299,42 @@
     }
   }
 
-  #croissance{
+  #croissance {
     background-color: $dark;
     margin-top: 400px;
     position: relative;
 
-    .columns{
+    .columns {
       flex-direction: column;
       gap: 0;
 
-      .block-img{
+      .block-img {
         margin-top: -400px;
         height: 600px;
       }
 
-      .texte{
-        width: calc( 50% - 60px);
+      .texte {
+        width: calc(50% - 60px);
         padding: 120px 60px 0 0;
 
         h2,
-        p{
+        p {
           color: $light;
           position: relative;
           z-index: 2;
         }
 
-        h2{
+        h2 {
           font-weight: 800;
           margin-bottom: 50px;
         }
 
-        &::before{
-          content:'';
+        &::before {
+          content: "";
           background: $dark;
           position: absolute;
           top: 0;
-          left:0;
+          left: 0;
           display: block;
           width: 50%;
           height: 300px;
@@ -343,7 +344,7 @@
         margin-top: -250px;
       }
 
-      .block-img-2{
+      .block-img-2 {
         width: 450px;
         margin: auto;
         margin-top: -100px;
@@ -352,24 +353,24 @@
     }
   }
 
-  #savoir-faire{
+  #savoir-faire {
     padding-top: 300px;
   }
-  
-  #livraison{
+
+  #livraison {
     padding-top: 350px;
 
-    .container{
+    .container {
       padding-bottom: 150px;
 
-      .col-g{
+      .col-g {
         position: relative;
 
-        .block-img{
+        .block-img {
           height: 750px;
         }
 
-        .floating-img{
+        .floating-img {
           width: 200px;
           position: absolute;
           bottom: -50px;
@@ -378,10 +379,10 @@
         }
       }
 
-      .col-d{
+      .col-d {
         padding-top: 150px;
 
-        h3{
+        h3 {
           text-transform: uppercase;
           color: $middle-gray;
           letter-spacing: 5px;
@@ -389,8 +390,8 @@
           display: flex;
           align-items: center;
 
-          &::before{
-            content:'';
+          &::before {
+            content: "";
             display: block;
             width: 30px;
             height: 2px;
@@ -399,16 +400,16 @@
           }
         }
 
-        h2{
+        h2 {
           color: $secondary-color;
           margin-bottom: 50px;
         }
 
-        ul{
+        ul {
           list-style: none;
           margin-bottom: 50px;
 
-          li{
+          li {
             text-transform: uppercase;
             font-weight: 600;
             letter-spacing: 1px;
@@ -422,9 +423,8 @@
     }
   }
 
-  #big-text{
+  #big-text {
     padding: 250px 0;
     min-height: 150px;
   }
 }
-  
