@@ -881,6 +881,26 @@
         z-index: 15;
         left: auto;
       }
+
+      .block-img {
+        width: 90vw;
+        margin-left: 0;
+        height: 250px;
+      }
+    }
+  }
+
+  #menu-section-dark {
+    padding: 150px 0;
+
+    .menu-list {
+      gap: 0;
+
+      a {
+        font-size: 2rem;
+        line-height: 2rem;
+        text-align: left;
+      }
     }
   }
   // FRONT-PAGE
@@ -960,20 +980,6 @@
       .top_content {
         img {
           width: 100%;
-        }
-      }
-    }
-
-    #menu-section-dark {
-      padding: 150px 0;
-
-      .menu-list {
-        gap: 0;
-
-        a {
-          font-size: 2rem;
-          line-height: 2rem;
-          text-align: left;
         }
       }
     }
