@@ -850,6 +850,8 @@
 
         .block-img {
           margin-left: auto;
+          height: 200px;
+          width: 50%;
         }
 
         h2,
@@ -861,12 +863,13 @@
 
       .cold {
         width: 100%;
+        margin-top: -230px;
 
         .block-img {
           margin-top: 0;
-          width: 40%;
-          height: 360px;
-          margin-top: -200px;
+          width: 50%;
+          height: 200px;
+          margin-top: 0;
         }
       }
     }
@@ -883,9 +886,9 @@
       }
 
       .block-img {
-        width: 90vw;
+        width: 100%;
         margin-left: 0;
-        height: 250px;
+        height: 220px;
       }
     }
   }
