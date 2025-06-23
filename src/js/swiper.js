@@ -23,27 +23,27 @@ const swiperFrontPage = new Swiper(".swiper-resp", {
   },
 });
 
-const swiperCatProduct = new Swiper(".swiper-cat-product",{
+const swiperCatProduct = new Swiper(".swiper-cat-product", {
   cssMode: true,
   loop: true,
   slidesPerView: 5,
-  spaceBetween: 30, 
+  spaceBetween: 30,
 
-  breakpoints:{
-    320:{
+  breakpoints: {
+    320: {
       slidesPerView: 1.2,
-      autoplay: true
+      autoplay: true,
     },
-    480:{
-      slidesPerView: 5
-    }
-  }
+    480: {
+      slidesPerView: 5,
+    },
+  },
 });
 
-const swiperGalerie = new Swiper(".swiper-galerie",{
+const swiperGalerie = new Swiper(".swiper-galerie", {
   cssMode: true,
   slidesPerView: 3,
-  spaceBetween: 50, 
+  spaceBetween: 50,
   loop: true,
 
   navigation: {
@@ -52,27 +52,27 @@ const swiperGalerie = new Swiper(".swiper-galerie",{
   },
   scrollbar: {
     el: ".swiper-scrollbar",
-    hide: false ,
+    hide: false,
   },
-  breakpoints:{
-    320:{
+  breakpoints: {
+    320: {
       slidesPerView: 1,
-      autoplay: true
+      autoplay: true,
     },
-    480:{
-      slidesPerView: 3
-    }
-  }
+    480: {
+      slidesPerView: 3,
+    },
+  },
 });
 
-const swiperGeneration = new Swiper(".swiper-generation",{
+const swiperGeneration = new Swiper(".swiper-generation", {
   cssMode: true,
   slidesPerView: 1,
   navigation: {
     nextEl: ".swiper-gen-button-next",
     prevEl: ".swiper-gen-button-prev",
-  }
-})
+  },
+});
 
 /* Commun */
 
@@ -86,8 +86,18 @@ const swiperAcco = new Swiper(".swiper-acco", {
   },
 });
 
-const swiperTabsVal = new Swiper(".swiper-tabs-valeurs",{
+const swiperTabsVal = new Swiper(".swiper-tabs-valeurs", {
   slidesPerView: 4,
   loop: true,
   autoplay: true,
-})
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      autoplay: true,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+  },
+});
